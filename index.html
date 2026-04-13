@@ -1,1 +1,147 @@
-<p>mvp</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .tab.active {
+      color: #1976d2;
+      border-bottom: 2px solid #1976d2;
+      font-weight: bold;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .toolbar .actions span {
+      margin-left: 15px;
+      cursor: pointer;
+      color: #1976d2;
+    }
+
+    .content {
+      height: 300px;
+      background: #fafafa;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      background: #eee;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav div {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .bottom-nav .active {
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    .icon {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <span>Class</span>
+    <span>⬇️</span>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active">Class</div>
+    <div class="tab">Class Attendance</div>
+  </div>
+
+  <div class="toolbar">
+    <div>🔍 ☰</div>
+    <div class="actions">
+      <span>Class</span>
+      <span>Add Class</span>
+      <span>Update Class</span>
+      <span>Remove Class</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Empty area -->
+  </div>
+
+  <div class="bottom-nav">
+    <div class="active">
+      <span class="icon">■</span>
+      Class
+    </div>
+    <div>
+      <span class="icon">●</span>
+      Subject
+    </div>
+    <div>
+      <span class="icon">●</span>
+      Student
+    </div>
+    <div>
+      <span class="icon">▲</span>
+      Teacher
+    </div>
+    <div>
+      <span class="icon">📅</span>
+      Timetable
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
