@@ -35,7 +35,7 @@ TabViewsBar {
  justify-content: center;
 }
 
-TabEditBar {
+TabViewsEditBar {
  height: 40px;
  background: #222;
  color: white;
