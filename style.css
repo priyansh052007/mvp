@@ -17,7 +17,7 @@ html, body {
  flex-direction: column;
 }
 
-TopTabBar {
+.TopTabBar {
  height: 40px;
  background: #222;
  color: white;
@@ -26,7 +26,7 @@ TopTabBar {
  justify-content: center;
 }
 
-TabViewsBar {
+.TabViewsBar {
  height: 40px;
  background: #222;
  color: white;
@@ -35,7 +35,7 @@ TabViewsBar {
  justify-content: center;
 }
 
-TabViewsEditBar {
+.TabViewsEditBar {
  height: 40px;
  background: #222;
  color: white;
@@ -44,7 +44,7 @@ TabViewsEditBar {
  justify-content: center;
 }
 
-ScreenBar {
+.ScreenBar {
  flex: 1;
  background: #f4f4f4;
  color: white;
@@ -53,7 +53,7 @@ ScreenBar {
  justify-content: center;
 }
 
-BottomTabBar {
+.BottomTabBar {
  height: 40px;
  background: #222;
  color: white;
