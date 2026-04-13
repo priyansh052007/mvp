@@ -1,1 +1,127 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* THEMES */
+body.light {
+  background: #fff;
+  color: #000;
+}
+
+body.dark {
+  background: #000;
+  color: #fff;
+}
+
+/* CONTENT */
+.content {
+  padding: 20px;
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 60px;
+  padding-bottom: env(safe-area-inset-bottom);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: inherit;
+  border-top: 1px solid rgba(150,150,150,0.25);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  z-index: 1000;
+}
+
+/* NAV ITEM */
+.nav-item {
+  width: 60px;
+  height: 100%;
+
+  background: none;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  opacity: 0.65;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* TAP ANIMATION */
+.nav-item:active {
+  transform: scale(0.80);
+}
+
+/* SVG ICONS */
+.nav-item svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* ACTIVE STATE */
+.nav-item.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* PROFILE IMAGE */
+.nav-item.profile img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+
+  border: 2px solid transparent;
+}
+
+/* ACTIVE PROFILE RING (Instagram story style) */
+.nav-item.profile.active img {
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #feda75, #d62976, #4f5bd5);
+  padding: 2px;
+}
+
+/* MOVING INDICATOR BAR */
+.nav-indicator {
+  position: fixed;
+  bottom: 0;
+  height: 2px;
+  width: 40px;
+
+  background: #000;
+  border-radius: 2px;
+
+  transition: all 0.25s ease;
+
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+/* DARK MODE */
+body.dark .bottom-nav {
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+body.dark .nav-item {
+  color: #fff;
+}
+
+body.dark .nav-indicator {
+  background: #fff;
+}
