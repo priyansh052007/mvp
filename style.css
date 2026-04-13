@@ -47,6 +47,7 @@ TabViewsEditBar {
 ScreenBar {
  flex: 1;
  background: #f4f4f4;
+ color: white;
  display: flex;
  align-items: center;
  justify-content: center;
