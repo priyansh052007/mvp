@@ -1,52 +1,145 @@
+/* =====================
+   ROOT THEME VARIABLES
+===================== */
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --muted: #666;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --border: rgba(0, 0, 0, 0.08);
+  --active: #111;
+}
+
+/* Dark mode (Instagram-like) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --muted: #aaa;
+    --nav-bg: rgba(0, 0, 0, 0.6);
+    --border: rgba(255, 255, 255, 0.08);
+    --active: #fff;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background: #fff;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden; /* app-like feel */
 }
 
-/* Simulated content */
+/* =====================
+   APP CONTAINER
+===================== */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollable content area */
 .content {
-  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  padding-bottom: 90px; /* IMPORTANT: space for fixed nav */
 }
 
-/* Bottom Nav */
+/* Demo cards */
+.card {
+  background: var(--border);
+  padding: 20px;
+  margin: 12px 0;
+  border-radius: 12px;
+}
+
+/* =====================
+   BOTTOM NAV (INSTAGRAM STYLE)
+===================== */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
 
-  height: 60px; /* Instagram approx height */
-  background: #fff;
-
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  border-top: 1px solid #dbdbdb;
-  z-index: 1000;
+  background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-top: 1px solid var(--border);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 999;
 }
 
-/* Icons */
-.bottom-nav a {
-  color: #000;
-  font-size: 24px; /* Instagram icon size */
-  text-decoration: none;
+/* Nav items */
+.nav-item {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  width: 60px;
-  height: 100%;
+  gap: 4px;
+  cursor: pointer;
+
+  color: var(--muted);
+  transition: transform 0.15s ease, color 0.2s ease;
 }
 
-/* Active / hover feel */
-.bottom-nav a:hover {
-  color: #555;
+/* SVG icons */
+.nav-item svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+/* Label */
+.nav-item span {
+  font-size: 11px;
+}
+
+/* ACTIVE TAB */
+.nav-item.active {
+  color: var(--active);
+  transform: scale(1.05);
+  font-weight: 600;
+}
+
+/* Tap animation */
+.nav-item:active {
+  transform: scale(0.92);
+}
+
+/* Optional active underline (Instagram-like indicator) */
+.nav-item.active::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  background: var(--active);
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+/* Smooth interaction feel */
+.nav-item,
+.nav-item * {
+  -webkit-tap-highlight-color: transparent;
 }
