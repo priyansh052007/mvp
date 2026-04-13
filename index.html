@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile UI Bottom Nav</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Fixed Tab Example</title>
+  <style>
+    /* Fixed tab */
+    .tab {
+      position: fixed;   /* stays on screen */
+      top: 0;            /* stick to top */
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      padding: 10px;
+      gap: 20px;
+      z-index: 1000;     /* stays above other content */
+    }
+
+    .tab a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+
+    .tab a:hover {
+      background: #555;
+      border-radius: 5px;
+    }
+
+    /* Page content */
+    .content {
+      margin-top: 60px; /* prevent overlap with fixed tab */
+      padding: 20px;
+      height: 2000px; /* just to enable scrolling */
+      background: #f4f4f4;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="app">
+  <div class="tab">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
 
-    <!-- SCROLLABLE CONTENT -->
-    <main class="content">
-      <h1>Mobile App UI</h1>
-      <p>Scroll this content. Bottom nav stays fixed like Instagram.</p>
-
-      <div class="card">Class Content</div>
-      <div class="card">Subject Content</div>
-      <div class="card">Student Content</div>
-      <div class="card">Teacher Content</div>
-      <div class="card">Timetable Content</div>
-
-      <div style="height: 900px;"></div>
-    </main>
-
-    <!-- BOTTOM NAVIGATION -->
-    <nav class="bottom-nav">
-
-      <button class="nav-item active">
-        <svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg>
-        <span>Class</span>
-      </button>
-
-      <button class="nav-item">
-        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-        <span>Subject</span>
-      </button>
-
-      <button class="nav-item">
-        <svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zM8 11c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zM8 13c-2.7 0-5 1.3-5 3v2h10v-2c0-1.7-2.3-3-5-3zM16 13c-.6 0-1.2.1-1.7.3 1.2.8 1.7 1.8 1.7 2.7v2h6v-2c0-1.7-2.3-3-6-3z"/></svg>
-        <span>Student</span>
-      </button>
-
-      <button class="nav-item">
-        <svg viewBox="0 0 24 24"><path d="M12 12c2.8 0 5-2.2 5-5s-2.2-5-5-5-5 2.2-5 5 2.2 5 5 5zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg>
-        <span>Teacher</span>
-      </button>
-
-      <button class="nav-item">
-        <svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm12 18H5V9h14v11z"/></svg>
-        <span>Timetable</span>
-      </button>
-
-    </nav>
-
+  <div class="content">
+    <h2>Scroll down</h2>
+    <p>This content scrolls, but the tab stays fixed at the top.</p>
   </div>
 
 </body>
