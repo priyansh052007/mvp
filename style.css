@@ -46,7 +46,7 @@ html, body {
 
 .ScreenBar {
  /*flex: 1;*/
- height: 60px
+ height: 60px;
  background: red;
  color: #42424f;
  display: flex;
