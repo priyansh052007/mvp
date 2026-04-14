@@ -18,7 +18,7 @@ html, body {
 }
 
 .TopTabBar {
- flex: 10;
+ height: 20px;
  background: #eaebec;
  color: #42424f;
  display: flex;
@@ -27,7 +27,7 @@ html, body {
 }
 
 .TabViewsBar {
- flex: 5;
+ height: 20px;
  background: #eaebec;
  color: #42424f;
  display: flex;
@@ -36,7 +36,7 @@ html, body {
 }
 
 .TabViewsEditBar {
- flex: 5;
+ height: 20px;
  background: #eaebec;
  color: #42424f;
  display: flex;
@@ -45,8 +45,7 @@ html, body {
 }
 
 .ScreenBar {
- flex: 70;
- overflow-y: auto;
+ height: 40px;
  background: green;
  color: #42424f;
  display: flex;
@@ -55,7 +54,7 @@ html, body {
 }
 
 .BottomTabBar {
- flex: 10;
+ height: 20px;
  background: #eaebec;
  color: #42424f;
  display: flex;
@@ -63,10 +62,8 @@ html, body {
  justify-content: center;
 }
 
- /*
-
+/*
 position: fixed;
 bottom: 0;
 width: 100%;
-
 */
