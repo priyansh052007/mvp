@@ -45,7 +45,8 @@ html, body {
 }
 
 .ScreenBar {
- flex: 1;
+ /*flex: 1;*/
+ height: 60px
  background: white;
  color: #42424f;
  display: flex;
@@ -60,7 +61,7 @@ html, body {
  display: flex;
  align-items: center;
  justify-content: center;
- position: fixed;
+ /* position: fixed;
  bottom: 0;
  /* width: 100%; */
 }
