@@ -31,8 +31,9 @@ html, body {
  background: #eaebec;
  color: #42424f;
  display: flex;
- justify-content: space-evenly;
+ justify-content: center;
  align-items: center;
+ gap: 20px;
 }
 
 .TabViewsEditBar {
