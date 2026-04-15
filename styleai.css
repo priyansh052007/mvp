@@ -71,7 +71,7 @@ html, body {
 
 /* Dummy content */
 .box {
-  height: 200px; /* simulate scroll */
+  height: 600px; /* simulate scroll */
   background: white;
   border: 1px solid #ddd;
 }
