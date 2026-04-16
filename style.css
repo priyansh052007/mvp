@@ -18,7 +18,7 @@ html, body {
 }
 
 .header {
-  height: 10%;
+  height: 8%;
   background: #eaebec;
   color: #42424f;
   display: flex;
@@ -27,7 +27,7 @@ html, body {
 }
 
 .tabs {
-  height: 5%;
+  height: 4%;
   background: #eaebec;
   color: #42424f;
   display: flex;
@@ -37,7 +37,7 @@ html, body {
 }
 
 .todo {
-  height: 5%;
+  height: 4%;
   background: #eaebec;
   color: #42424f;
   display: flex;
@@ -46,7 +46,7 @@ html, body {
 }
 
 .content {
-  height: 50%;
+  height: 76%;
   background: #ffffe;
   color: #42424f;
   display: flex;
@@ -55,7 +55,7 @@ html, body {
 }
 
 .main_tabs {
-  height: 10%;
+  height: 8%;
   background: #eaebec;
   color: #42424f;
   display: flex;
