@@ -78,7 +78,7 @@ html, body {
 
 /* Bottom nav */
 .bottom-nav {
-  height: 70px;
+  height: 100px;
   background: #e0e0e0;
   display: flex;
   justify-content: space-around;
