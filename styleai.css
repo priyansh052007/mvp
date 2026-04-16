@@ -14,7 +14,7 @@ html, body {
 
 /* Main App */
 .app {
-  height: 100dvh;
+  height: 70dvh;
   display: flex;
   flex-direction: column;
   background: #f5f5f5;
