@@ -46,7 +46,7 @@ html, body {
 }
 
 .content {
-  height: 30%;
+  height: 60%;
   background: #ffffe;
   color: #42424f;
   display: flex;
@@ -69,7 +69,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 5px; */
 }
 
 .main_tabs .tab_icon {
@@ -77,6 +76,7 @@ html, body {
 }
 
 /*
+gap: 5px;
 position: fixed;
 bottom: 0;
 width: 100%;
