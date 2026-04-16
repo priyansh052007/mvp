@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .screen {
+    height: 100vh;
+    padding-bottom: 80px;
+  }
+
+  /* Bottom Nav */
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 70px;
+    background: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 1px solid #eee;
+  }
+
+  .item {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    position: relative;
+  }
+
+  .icon {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .active {
+    color: #000;
+  }
+
+  /* Instagram-like dot indicator */
+  .indicator {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+    display: none;
+  }
+
+  .active .indicator {
+    display: block;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+  <h2 style="padding:20px;">Instagram Style Bottom Nav</h2>
+</div>
+
+<div class="nav">
+
+  <div class="item active" onclick="setTab(this)">
+    <div class="indicator"></div>
+    <span class="icon">🏠</span>
+    Home
+  </div>
+
+  <div class="item" onclick="setTab(this)">
+    <div class="indicator"></div>
+    <span class="icon">🔍</span>
+    Search
+  </div>
+
+  <div class="item" onclick="setTab(this)">
+    <div class="indicator"></div>
+    <span class="icon">🎬</span>
+    Reels
+  </div>
+
+  <div class="item" onclick="setTab(this)">
+    <div class="indicator"></div>
+    <span class="icon">🛍️</span>
+    Shop
+  </div>
+
+  <div class="item" onclick="setTab(this)">
+    <div class="indicator"></div>
+    <span class="icon">👤</span>
+    Profile
+  </div>
+
+</div>
+
+<script>
+function setTab(el) {
+  document.querySelectorAll('.item').forEach(i => {
+    i.classList.remove('active');
+  });
+  el.classList.add('active');
+}
+</script>
+
+</body>
+</html>
