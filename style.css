@@ -64,16 +64,16 @@ html, body {
 }
 
 .main_tabs .tab {
-  font-size: 14px;
+  font-size: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 20px;
 }
 
 .main_tabs .tab_icon {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /*
