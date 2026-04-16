@@ -17,7 +17,7 @@ html, body {
  flex-direction: column;
 }
 
-.TopTabBar {
+.header {
  height: 5%;
  background: #eaebec;
  color: #42424f;
@@ -26,7 +26,7 @@ html, body {
  align-items: center;
 }
 
-.TabViewsBar {
+.tabs {
  height: 2%;
  background: #eaebec;
  color: #42424f;
@@ -36,7 +36,7 @@ html, body {
  gap: 20px;
 }
 
-.TabViewsEditBar {
+.todo {
  height: 2%;
  background: #eaebec;
  color: #42424f;
@@ -45,7 +45,7 @@ html, body {
  align-items: center;
 }
 
-.ScreenBar {
+.content {
  height: 20%;
  background: #ffffe;
  color: #42424f;
@@ -54,7 +54,7 @@ html, body {
  align-items: center;
 }
 
-.BottomTabBar {
+.main_tabs {
  height: 5%;
  background: #eaebec;
  color: #42424f;
