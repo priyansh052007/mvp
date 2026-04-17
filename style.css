@@ -22,7 +22,7 @@ html, body {
   background: #eaebec;
   color: #42424f;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-size: 50px;
   font-weight: bold;
@@ -52,7 +52,7 @@ html, body {
 }
 
 .content {
-  height: 60dvh;
+  height: 30dvh;
   background: #ffffe;
   color: #42424f;
   display: flex;
