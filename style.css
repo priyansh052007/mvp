@@ -45,7 +45,7 @@ html, body {
 
 .todo {
   height: 4dvh;
-  background: #eaebec;
+  background: #ffffe;
   color: #42424f;
   display: flex;
   justify-content: space-evenly;
