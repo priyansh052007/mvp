@@ -29,7 +29,7 @@ html, body {
 }
 
 .header .icon {
-  font-size: 100px;
+  font-size: 90px;
 }
 
 .tabs {
@@ -44,7 +44,7 @@ html, body {
 
 .todo {
   height: 4dvh;
-  background: #ffffe;
+  background: #eaebec;
   color: #42424f;
   display: flex;
   justify-content: space-evenly;
@@ -52,7 +52,7 @@ html, body {
 }
 
 .content {
-  height: 30dvh;
+  height: 60dvh;
   background: #ffffe;
   color: #42424f;
   display: flex;
@@ -75,7 +75,6 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  font-weight: bold;
 }
 
 .main_tabs .tab_icon {
@@ -87,4 +86,5 @@ gap: 5px;
 position: fixed;
 bottom: 0;
 width: 100%;
+font-weight: bold;
 */
