@@ -21,15 +21,20 @@ html, body {
   height: 8dvh;
   background: #eaebec;
   color: #42424f;
-  font-size: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header .icon {
+  font-size: 70px;
 }
 
 .tabs {
   height: 4dvh;
-  background: #eaebec;
+  background: #ffffe;
   color: #42424f;
   display: flex;
   justify-content: center;
@@ -39,7 +44,7 @@ html, body {
 
 .todo {
   height: 4dvh;
-  background: #eaebec;
+  background: #ffffe;
   color: #42424f;
   display: flex;
   justify-content: space-evenly;
@@ -65,11 +70,12 @@ html, body {
 }
 
 .main_tabs .tab {
-  font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .main_tabs .tab_icon {
