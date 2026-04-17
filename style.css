@@ -21,6 +21,7 @@ html, body {
   height: 8%;
   background: #eaebec;
   color: #42424f;
+  font-size: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
