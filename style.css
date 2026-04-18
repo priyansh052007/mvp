@@ -18,7 +18,7 @@ html, body {
 }
 
 .header {
-  height: 6dvh;
+  height: 5dvh;
   background: #eaebec;
   color: #42424f;
   display: flex;
@@ -60,12 +60,13 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 60px;
   padding: 0 40px;
   gap: 40px;
 }
 
-
+.search_icon, .filter_icon {
+  font-size: 40px;
+}
 
 .todo_tabs {
   width: 76%;
@@ -78,7 +79,7 @@ html, body {
 }
 
 .content {
-  height: 78dvh;
+  height: 79dvh;
   background: #ffffe;
   color: #42424f;
   display: flex;
