@@ -53,7 +53,7 @@ html, body {
   align-items: center;
 }
 
-.todo_tabs {
+.todo .todo_tabs {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
