@@ -47,25 +47,26 @@ html, body {
 
 .todo {
   height: 4dvh;
+  width: 100%;
   background: #eaebec;
   color: #42424f;
   display: flex;
   align-items: center;
 }
 
-.search_icon, .filter_icon{
-  width: 12vh
+.search_icon, .filter_icon {
+  width: 12%;
   font-size: 60px;
 }
 
 .todo_tabs {
-  width: 76vw;
+  width: 76%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 25px;
   padding: 0 40px;
-  gap: 40px
+  gap: 40px;
 }
 
 .content {
