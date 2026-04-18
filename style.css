@@ -60,9 +60,12 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 60px;
   padding: 0 40px;
   gap: 40px;
+}
+
+.search_icon {
+  font-size: 60px;
 }
 
 .todo_tabs {
