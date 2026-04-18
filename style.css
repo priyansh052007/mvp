@@ -53,12 +53,19 @@ html, body {
   align-items: center;
 }
 
-.todo .todo_tabs {
+.search_icon, .filter_icon{
+  width: 12vh
+  font-size: 60px;
+}
+
+.todo_tabs {
   width: 76vw;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   font-size: 25px;
+  padding: 0 40px;
+  gap: 40px
 }
 
 .content {
