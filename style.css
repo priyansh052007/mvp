@@ -29,7 +29,7 @@ html, body {
   padding: 0 20px;
 }
 
-.header .icon {
+.header .header_icon {
   font-size: 90px;
 }
 
@@ -81,7 +81,7 @@ html, body {
   font-size: 30px;
 }
 
-.main_tabs .tab_icon {
+.main_tabs .main_tabs_icon {
   font-size: 70px;
 }
 
