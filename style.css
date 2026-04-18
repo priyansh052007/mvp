@@ -51,19 +51,25 @@ html, body {
   background: #eaebec;
   color: #42424f;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.search_icon, .filter_icon {
-  width: 12%;
+.todo_icon {
+  width: 24%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 60px;
+  padding: 0 40px;
+  gap: 40px;
 }
 
 .todo_tabs {
   width: 76%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   font-size: 25px;
   padding: 0 40px;
   gap: 40px;
