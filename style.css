@@ -33,7 +33,7 @@ html, body {
   font-size: 90px;
 }
 
-.tabs a {
+.tabs {
   height: 4dvh;
   background: #eaebec;
   color: #42424f;
@@ -45,7 +45,7 @@ html, body {
   gap: 40px;
 }
 
-.todo a {
+.todo {
   height: 4dvh;
   width: 100%;
   background: #eaebec;
@@ -86,7 +86,7 @@ html, body {
   align-items: center;
 }
 
-.main_tabs a {
+.main_tabs {
   height: 8dvh;
   background: #eaebec;
   color: #42424f;
