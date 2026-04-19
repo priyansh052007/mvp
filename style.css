@@ -101,10 +101,16 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  transition: background-color 0.3s ease;
 }
 
 .main_tabs .main_tabs_icon {
   font-size: 70px;
+}
+
+.tab.active {
+  background-color: #4083f2;
+  color: white;
 }
 
 /*
