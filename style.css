@@ -101,7 +101,6 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  transition: background-color 0.3s ease;
 }
 
 .main_tabs .main_tabs_icon {
@@ -109,8 +108,7 @@ html, body {
 }
 
 .tab.active {
-  background-color: #4083f2;
-  color: white;
+  color: #4083f2;
 }
 
 /*
