@@ -1,16 +1,16 @@
-const main_tabs = document.querySelectorAll('.c_tab');
+const main_tabs = document.querySelectorAll('.main_tab');
 
 main_tabs[0].classList.add('active');
 
-main_tabs.forEach(find_tab => {
-  find_tab.addEventListener('click', () => {
-    main_tabs.forEach(find_tab => find_tab.classList.remove('active'));
-    find_tab.classList.add('active');
+main_tabs.forEach(click_tab => {
+  click_tab.addEventListener('click', () => {
+    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
+    click_tab.classList.add('active');
   });
 });
 
 
-const todo_tabs = document.querySelectorAll('.b_tab');
+const todo_tabs = document.querySelectorAll('.todo_tab');
 
 todo_tabs[0].classList.add('active');
 
