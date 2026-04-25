@@ -34,3 +34,17 @@ todo_tabs.forEach(find_tab => {
 });
 
 
+function selectOption(option) {
+  const first = document.getElementById("first");
+  const second = document.getElementById("second");
+
+  if (option === 'a') {
+    first.innerText = "aa";
+    second.innerText = "ab";
+  } else if (option === 'b') {
+    first.innerText = "ba";
+    second.innerText = "bb";
+  }
+}
+
+
