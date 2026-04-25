@@ -8,3 +8,15 @@ all_tabs.forEach(find_tab => {
     find_tab.classList.add('active');
   });
 });
+
+
+const todo_tabs = document.querySelectorAll('.todo_tabs');
+
+todo_tabs[0].classList.add('active');
+
+todo_tabs.forEach(find_todo => {
+  find_todo.addEventListener('click', () => {
+    todo_tabs.forEach(find_todo => find_todo.classList.remove('active'));
+    find_todo.classList.add('active');
+  });
+});
