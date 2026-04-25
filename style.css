@@ -79,7 +79,7 @@ html, body {
   gap: 40px;
 }
 
-.b_tab.active {
+.todo_tab.active {
   color: #5282eb;
 }
 
@@ -101,7 +101,7 @@ html, body {
   align-items: center;
 }
 
-.main_tabs .c_tab {
+.main_tabs .main_tab {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +114,7 @@ html, body {
   font-size: 70px;
 }
 
-.c_tab.active {
+.main_tab.active {
   color: #4083f2;
 }
 
