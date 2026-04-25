@@ -1,4 +1,4 @@
-const main_tabs = document.querySelectorAll('.c_tabs');
+const main_tabs = document.querySelectorAll('.c_tab');
 
 main_tabs[0].classList.add('active');
 
@@ -10,7 +10,7 @@ main_tabs.forEach(find_tab => {
 });
 
 
-const todo_tabs = document.querySelectorAll('.b_tabs');
+const todo_tabs = document.querySelectorAll('.b_tab');
 
 todo_tabs[0].classList.add('active');
 
