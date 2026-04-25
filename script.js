@@ -16,7 +16,7 @@ todo_tabs[0].classList.add('active');
 
 todo_tabs.forEach(find_tab => {
   find_tab.addEventListener('click', () => {
-    todo_tab.forEach(find_tab => find_tab.classList.remove('active'));
+    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
     find_tab.classList.add('active');
   });
 });
