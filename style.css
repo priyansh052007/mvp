@@ -107,6 +107,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  padding: 0 40px;
 }
 
 .main_tabs .main_tabs_icon {
