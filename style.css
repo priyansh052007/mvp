@@ -36,7 +36,7 @@ html, body {
 .tabs {
   height: 4dvh;
   background: #eaebec;
-  color: #a6c0f3;
+  color: #42424f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,6 @@ html, body {
   height: 4dvh;
   width: 100%;
   background: #eaebec;
-  color: #42424f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +57,7 @@ html, body {
 
 .todo_icons {
   width: 24%;
+  color: #4184f3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -70,12 +70,17 @@ html, body {
 
 .todo_tabs {
   width: 76%;
+  color: #a6c0f3;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 25px;
   padding: 0 40px;
   gap: 40px;
+}
+
+.todo_tabs.active {
+  color: #5282eb;
 }
 
 .content {
