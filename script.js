@@ -35,15 +35,22 @@ todo_tabs.forEach(find_tab => {
 
 
 function selectOption(option) {
-  const first = document.getElementById("first");
-  const second = document.getElementById("second");
+  const one = document.getElementById("1");
+  const two = document.getElementById("2");
+  const three = document.getElementById("3");
+  const four = document.getElementById("4");
+
 
   if (option === 'a') {
-    first.innerText = "aa";
-    second.innerText = "ab";
+    one.innerText = "Class";
+    two.innerText = "Add Class";
+    three.innerText = "Update Class";
+    four.innerText = "Remove Class";
   } else if (option === 'b') {
-    first.innerText = "ba";
-    second.innerText = "bb";
+    one.innerText = "Class Atendance";
+    two.innerText = "Add Class Attendance";
+    three.innerText = "Update Class Attendance";
+    four.innerText = "";
   }
 }
 
