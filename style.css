@@ -46,6 +46,10 @@ html, body {
   border-bottom: 3px solid #5282eb;
 }
 
+.tab.active {
+  color: #4083f2;
+}
+
 .todo {
   height: 4dvh;
   width: 100%;
