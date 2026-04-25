@@ -43,6 +43,7 @@ html, body {
   font-size: 35px;
   font-weight: bold;
   gap: 40px;
+  border-bottom: 3px solid #5282eb;
 }
 
 .todo {
