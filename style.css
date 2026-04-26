@@ -68,6 +68,9 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   overflow-x: auto;
+  .todo_tabs::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .search_icon, .filter_icon {
@@ -86,6 +89,9 @@ html, body {
   padding: 0 40px;
   gap: 40px;
   overflow-x: auto;
+  .todo_tabs::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .todo_tab {
