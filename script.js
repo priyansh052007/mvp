@@ -54,21 +54,6 @@ function selectOption(option) {
 }
 
 
-const todo__tabs = document.querySelector('.todo_tabs');
-
-function adjustFlexAlignment() {
-  const isOverflowing = todo__tabs.scrollWidth > todo__tabs.clientWidth;
-
-  if (isOverflowing) {
-    todo__tabs.style.justifyContent = 'flex-end';
-  } else {
-    todo__tabs.style.justifyContent = 'flex-start';
-  }
-}
-
-
-
-
 
 
 
