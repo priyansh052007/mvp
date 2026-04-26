@@ -58,6 +58,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .todo_icons {
@@ -66,6 +67,8 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .search_icon, .filter_icon {
@@ -82,6 +85,8 @@ html, body {
   font-size: 25px;
   padding: 0 40px;
   gap: 40px;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .todo_tab.active {
