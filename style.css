@@ -67,10 +67,6 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: auto;
-  .todo_tabs::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 .search_icon, .filter_icon {
