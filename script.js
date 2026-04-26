@@ -36,6 +36,7 @@ todo_tabs.forEach(find_tab => {
 
 function selectOption(option) {
   const todo__tabs = document.querySelectorAll('.todo_tab');
+  todo__tabs.classList.remove('active');
   todo__tabs[0].classList.add('active');
   const one = document.getElementById("1");
   const two = document.getElementById("2");
