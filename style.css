@@ -62,7 +62,7 @@ html, body {
 }
 
 .todo_icons {
-  width: 24%;
+  width: 30%;
   color: #4184f3;
   display: flex;
   justify-content: flex-start;
@@ -76,7 +76,7 @@ html, body {
 }
 
 .todo_tabs {
-  width: 76%;
+  width: 70%;
   color: #a6c0f3;
   display: flex;
   justify-content: flex-start;
