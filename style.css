@@ -85,9 +85,9 @@ html, body {
   padding: 0 40px;
   gap: 40px;
   overflow-x: auto;
-  .todo_tabs::-webkit-scrollbar {
-    display: none;
-  }
+}
+.todo_tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .todo_tab {
