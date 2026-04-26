@@ -40,7 +40,6 @@ function selectOption(option) {
   const three = document.getElementById("3");
   const four = document.getElementById("4");
 
-
   if (option === 'a') {
     one.innerText = "Class";
     two.innerText = "Add Class";
@@ -53,5 +52,24 @@ function selectOption(option) {
     four.innerText = "";
   }
 }
+
+
+const todo__tabs = document.querySelector('.todo_tabs');
+
+function adjustFlexAlignment() {
+  const isOverflowing = todo__tabs.scrollWidth > todo__tabs.clientWidth;
+
+  if (isOverflowing) {
+    todo__tabs.style.justifyContent = 'flex-end';
+  } else {
+    todo__tabs.style.justifyContent = 'flex-start';
+  }
+}
+
+
+
+
+
+
 
 
