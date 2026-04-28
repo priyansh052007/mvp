@@ -60,78 +60,113 @@ function selectOption(option) {
 }
 
 function updateTabs() {
-  let t1, t2, t3, t4;
+  let h1, t1, t2, tt1, tt2, tt3, tt4;
 
   if (currentTab === "class" && currentOption === "a") {
+    h1 = "Class";
     t1 = "Class";
-    t2 = "Add Class";
-    t3 = "Update Class";
-    t4 = "Remove Class";
+    t2 = "Class Attendance";
+    tt1 = "Class";
+    tt2 = "Add Class";
+    tt3 = "Update Class";
+    tt4 = "Remove Class";
   } 
   else if (currentTab === "class" && currentOption === "b") {
-    t1 = "Class Attendance";
-    t2 = "Add Class Attendance";
-    t3 = "Update Class Attendance";
-    t4 = "Remove Class Attendance";
+    h1 = "Class";
+    t1 = "Class";
+    t2 = "Class Attendance";
+    tt1 = "Class Attendance";
+    tt2 = "Add Class Attendance";
+    tt3 = "Update Class Attendance";
+    tt4 = "Remove Class Attendance";
   }
 
   else if (currentTab === "subject" && currentOption === "a") {
+    h1 = "Subject";
     t1 = "Subject";
-    t2 = "Add Subject";
-    t3 = "Update Subject";
-    t4 = "Remove Subject";
+    t2 = "Subject Attendance";
+    tt1 = "Subject";
+    tt2 = "Add Subject";
+    tt3 = "Update Subject";
+    tt4 = "Remove Subject";
   } 
   else if (currentTab === "subject" && currentOption === "b") {
-    t1 = "Subject Attendance";
-    t2 = "Add Subject Attendance";
-    t3 = "Update Subject Attendance";
-    t4 = "Remove Subject Attendance";
+    h1 = "Subject";
+    t1 = "Subject";
+    t2 = "Subject Attendance";
+    tt1 = "Subject Attendance";
+    tt2 = "Add Subject Attendance";
+    tt3 = "Update Subject Attendance";
+    tt4 = "Remove Subject Attendance";
   }
 
   else if (currentTab === "student" && currentOption === "a") {
+    h1 = "Student";
     t1 = "Student";
-    t2 = "Add Student";
-    t3 = "Update Student";
-    t4 = "Remove Student";
+    t2 = "Student Attendance";
+    tt1 = "Student";
+    tt2 = "Add Student";
+    tt3 = "Update Student";
+    tt4 = "Remove Student";
   } 
   else if (currentTab === "student" && currentOption === "b") {
-    t1 = "Student Attendance";
-    t2 = "Add Student Attendance";
-    t3 = "Update Student Attendance";
-    t4 = "Remove Student Attendance";
+    h1 = "Student";
+    t1 = "Student";
+    t2 = "Student Attendance";
+    tt1 = "Student Attendance";
+    tt2 = "Add Student Attendance";
+    tt3 = "Update Student Attendance";
+    tt4 = "Remove Student Attendance";
   }
 
   else if (currentTab === "teacher" && currentOption === "a") {
+    h1 = "Teacher";
     t1 = "Teacher";
-    t2 = "Add Teacher";
-    t3 = "Update Teacher";
-    t4 = "Remove Teacher";
+    t2 = "Teacher Attendance";
+    tt1 = "Teacher";
+    tt2 = "Add Teacher";
+    tt3 = "Update Teacher";
+    tt4 = "Remove Teacher";
   } 
   else if (currentTab === "teacher" && currentOption === "b") {
-    t1 = "Teacher Attendance";
-    t2 = "Add Teacher Attendance";
-    t3 = "Update Teacher Attendance";
-    t4 = "Remove Teacher Attendance";
+    h1 = "Teacher";
+    t1 = "Teacher";
+    t2 = "Teacher Attendance";
+    tt1 = "Teacher Attendance";
+    tt2 = "Add Teacher Attendance";
+    tt3 = "Update Teacher Attendance";
+    tt4 = "Remove Teacher Attendance";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
+    h1 = "Timetable";
     t1 = "Timetable";
-    t2 = "Add Timetable";
-    t3 = "Update Timetable";
-    t4 = "Remove Timetable";
+    t2 = "Timetable Attendance";
+    tt1 = "Timetable";
+    tt2 = "Add Timetable";
+    tt3 = "Update Timetable";
+    tt4 = "Remove Timetable";
   } 
   else if (currentTab === "timetable" && currentOption === "b") {
-    t1 = "Timetable Attendance";
-    t2 = "Add Timetable Attendance";
-    t3 = "Update Timetable Attendance";
-    t4 = "Remove Timetable Attendance";
+    h1 = "Timetable";
+    t1 = "Timetable";
+    t2 = "Timetable Attendance";
+    tt1 = "Timetable Attendance";
+    tt2 = "Add Timetable Attendance";
+    tt3 = "Update Timetable Attendance";
+    tt4 = "Remove Timetable Attendance";
   }
 
-  document.getElementById("1").innerText = t1;
-  document.getElementById("2").innerText = t2;
-  document.getElementById("3").innerText = t3;
-  document.getElementById("4").innerText = t4;
+  document.getElementById("header_1").innerText = h1;
+  document.getElementById("tab_1").innerText = t1;
+  document.getElementById("tab_2").innerText = t2;
+  document.getElementById("todo_tab_1").innerText = tt1;
+  document.getElementById("todo_tab_2").innerText = tt2;
+  document.getElementById("todo_tab_3").innerText = tt3;
+  document.getElementById("todo_tab_4").innerText = tt4;
 }
+
+
 
 
 
