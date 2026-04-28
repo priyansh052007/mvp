@@ -40,6 +40,9 @@ let currentTab = "class";
 let currentOption = "a";
 
 function selectTab(tab) {
+  const __tabs = document.querySelectorAll('.tab');
+  __tabs[0].classList.add('active');
+  __tabs[1].classList.remove('active');
   const todo__tabs = document.querySelectorAll('.todo_tab');
   todo__tabs[0].classList.add('active');
   todo__tabs[1].classList.remove('active');
@@ -50,6 +53,9 @@ function selectTab(tab) {
 }
 
 function selectOption(option) {
+  const ___tabs = document.querySelectorAll('.tab');
+  ___tabs[0].classList.add('active');
+  ___tabs[1].classList.remove('active');
   const todo___tabs = document.querySelectorAll('.todo_tab');
   todo___tabs[0].classList.add('active');
   todo___tabs[1].classList.remove('active');
