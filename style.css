@@ -49,6 +49,7 @@ html, body {
   height: 4dvh;
   color: #4083f2;
   /* border-bottom: 4px solid #5282eb; */
+  /* background: linear-gradient(#5282eb, #5282eb) bottom center / 140px 4px no-repeat; */
   background: linear-gradient(#5282eb, #5282eb) bottom;
   background-size: 140px 4px;
   background-repeat: no-repeat;
