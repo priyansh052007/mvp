@@ -50,7 +50,7 @@ html, body {
   color: #4083f2;
   /* border-bottom: 4px solid #5282eb; */
   background: linear-gradient(to right, #5282eb 50%, transparent 50%) bottom;
-  background-size: 100% 4px;
+  background-size: 140px 4px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
