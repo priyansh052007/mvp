@@ -211,13 +211,13 @@ function updateTabs() {
 
 
 
-const todo____tabs = document.querySelector('.todo_tab');
+const todo = document.querySelector('.todo_tabs');
 
 function checkScrollable() {
-  if (todo____tabs.scrollWidth > todo____tabs.clientWidth) {
-    todo____tabs.classList.add('scrollable');
+  if (todo.scrollWidth > todo.clientWidth) {
+    todo.classList.add('scrollable');
   } else {
-    todo____tabs.classList.remove('scrollable');
+    todo.classList.remove('scrollable');
   }
 }
 
