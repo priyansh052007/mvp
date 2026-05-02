@@ -49,6 +49,7 @@ function selectTab(tab) {
   todo__tabs[2].classList.remove('active');
   todo__tabs[3].classList.remove('active');
   currentTab = tab;
+  currentOption = "a";
   updateTabs();
 }
 
