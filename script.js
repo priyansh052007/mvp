@@ -53,7 +53,6 @@ function selectTab(tab) {
   currentTab = tab;
   currentOption = "a";
   updateTabs();
-  checkScrollable();
 }
 
 function selectOption(option) {
@@ -68,7 +67,6 @@ function selectOption(option) {
   todo___tabs[3].classList.remove('active');
   currentOption = option;
   updateTabs();
-  checkScrollable();
 }
 
 function updateTabs() {
@@ -209,21 +207,6 @@ function updateTabs() {
   document.getElementById("todo_tab_4").innerText = tt4;
 }
 
-
-
-
-
-const todo = document.querySelector('.todo_tabs');
-
-function checkScrollable() {
-  if (todo.scrollWidth > todo.clientWidth) {
-    todo.classList.add('scrollable');
-  } else {
-    todo.classList.remove('scrollable');
-  }
-}
-window.addEventListener('load', checkScrollable);
-window.addEventListener('resize', checkScrollable);
 
 
 
