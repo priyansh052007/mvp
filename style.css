@@ -80,7 +80,7 @@ html, body {
   width: 70%;
   color: #a6c0f3;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-size: 25px;
   padding: 0 40px;
