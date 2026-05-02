@@ -67,12 +67,13 @@ function selectOption(option) {
 }
 
 function updateTabs() {
-  let h1, t1, t2, tt1, tt2, tt3, tt4;
+  let h1, t1, t2, t3, tt1, tt2, tt3, tt4;
 
   if (currentTab === "class" && currentOption === "a") {
     h1 = "Class";
     t1 = "Class";
     t2 = "Class Attendance";
+    t3 = "";
     tt1 = "Class";
     tt2 = "Add Class";
     tt3 = "Update Class";
@@ -82,16 +83,18 @@ function updateTabs() {
     h1 = "Class";
     t1 = "Class";
     t2 = "Class Attendance";
+    t3 = "";
     tt1 = "Class Attendance";
     tt2 = "Add Class Attendance";
     tt3 = "Update Class Attendance";
-    tt4 = "Remove Class Attendance";
+    tt4 = "";
   }
 
   else if (currentTab === "subject" && currentOption === "a") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Subject Attendance";
+    t2 = "Subject Activity";
+    t3 = "";
     tt1 = "Subject";
     tt2 = "Add Subject";
     tt3 = "Update Subject";
@@ -100,17 +103,19 @@ function updateTabs() {
   else if (currentTab === "subject" && currentOption === "b") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Subject Attendance";
-    tt1 = "Subject Attendance";
-    tt2 = "Add Subject Attendance";
-    tt3 = "Update Subject Attendance";
-    tt4 = "Remove Subject Attendance";
+    t2 = "Subject Activity";
+    t3 = "";
+    tt1 = "Subject Activity";
+    tt2 = "Add Subject Activity";
+    tt3 = "Update Subject Activity";
+    tt4 = "Remove Student Activity";
   }
 
   else if (currentTab === "student" && currentOption === "a") {
     h1 = "Student";
     t1 = "Student";
     t2 = "Student Attendance";
+    t3 = "";
     tt1 = "Student";
     tt2 = "Add Student";
     tt3 = "Update Student";
@@ -120,16 +125,18 @@ function updateTabs() {
     h1 = "Student";
     t1 = "Student";
     t2 = "Student Attendance";
+    t3 = "";
     tt1 = "Student Attendance";
-    tt2 = "Add Student Attendance";
-    tt3 = "Update Student Attendance";
-    tt4 = "Remove Student Attendance";
+    tt2 = "";
+    tt3 = "";
+    tt4 = "";
   }
 
   else if (currentTab === "teacher" && currentOption === "a") {
     h1 = "Teacher";
     t1 = "Teacher";
-    t2 = "Teacher Attendance";
+    t2 = "Teacher Subject";
+    t3 = "Teacher Attendance";
     tt1 = "Teacher";
     tt2 = "Add Teacher";
     tt3 = "Update Teacher";
@@ -138,35 +145,59 @@ function updateTabs() {
   else if (currentTab === "teacher" && currentOption === "b") {
     h1 = "Teacher";
     t1 = "Teacher";
-    t2 = "Teacher Attendance";
+    t2 = "Teacher Subject";
+    t3 = "Teacher Attendance";
+    tt1 = "Teacher Subject";
+    tt2 = "Add Teacher Subject";
+    tt3 = "Update Teacher Subject";
+    tt4 = "Remove Teacher Subject";
+  }
+  else if (currentTab === "teacher" && currentOption === "c") {
+    h1 = "Teacher";
+    t1 = "Teacher";
+    t2 = "Teacher Subject";
+    t3 = "Teacher Attendance";
     tt1 = "Teacher Attendance";
-    tt2 = "Add Teacher Attendance";
-    tt3 = "Update Teacher Attendance";
-    tt4 = "Remove Teacher Attendance";
+    tt2 = "";
+    tt3 = "";
+    tt4 = "";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
     h1 = "Timetable";
     t1 = "Timetable";
-    t2 = "Timetable Attendance";
+    t2 = "Date Specific Timetable";
+    t3 = "Exam Timetable";
     tt1 = "Timetable";
-    tt2 = "Add Timetable";
+    tt2 = "Add Timeframe Block";
     tt3 = "Update Timetable";
-    tt4 = "Remove Timetable";
+    tt4 = "Remove Timeframe Slot";
   } 
   else if (currentTab === "timetable" && currentOption === "b") {
     h1 = "Timetable";
     t1 = "Timetable";
-    t2 = "Timetable Attendance";
-    tt1 = "Timetable Attendance";
-    tt2 = "Add Timetable Attendance";
-    tt3 = "Update Timetable Attendance";
-    tt4 = "Remove Timetable Attendance";
+    t2 = "Date Specific Timetable";
+    t3 = "Exam Timetable";
+    tt1 = "Date Specific Timetable";
+    tt2 = "Add Timeframe Block";
+    tt3 = "Update Timetable";
+    tt4 = "Remove Timeframe Slot";
+  }
+  else if (currentTab === "timetable" && currentOption === "c") {
+    h1 = "Timetable";
+    t1 = "Timetable";
+    t2 = "Date Specific Timetable";
+    t3 = "Exam Timetable";
+    tt1 = "Exam Timetable";
+    tt2 = "Add Exam Timeframe";
+    tt3 = "Update Exam Timetable";
+    tt4 = "Remove Exam Timeframe";
   }
 
   document.getElementById("header_1").innerText = h1;
   document.getElementById("tab_1").innerText = t1;
   document.getElementById("tab_2").innerText = t2;
+  document.getElementById("tab_3").innerText = t3;
   document.getElementById("todo_tab_1").innerText = tt1;
   document.getElementById("todo_tab_2").innerText = tt2;
   document.getElementById("todo_tab_3").innerText = tt3;
