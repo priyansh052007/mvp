@@ -55,7 +55,7 @@ html, body {
   height: 4dvh;
   width: 100%;
   background: #ffffe;
-  border-bottom: 3px solid #eaebec;
+  border-bottom: 2px solid #eaebec;
   display: flex;
   justify-content: space-between;
   align-items: center;
