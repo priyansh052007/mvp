@@ -36,6 +36,7 @@ todo_tabs.forEach(find_tab => {
 
 
 
+
 let currentTab = "class";
 let currentOption = "a";
 
@@ -205,6 +206,23 @@ function updateTabs() {
   document.getElementById("todo_tab_3").innerText = tt3;
   document.getElementById("todo_tab_4").innerText = tt4;
 }
+
+
+
+
+
+const todo____tabs = document.querySelector('.todo_tab');
+
+function checkScrollable() {
+  if (todo____tabs.scrollWidth > todo____tabs.clientWidth) {
+    todo____tabs.classList.add('scrollable');
+  } else {
+    todo____tabs.classList.remove('scrollable');
+  }
+}
+
+
+
 
 
 
