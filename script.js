@@ -220,6 +220,7 @@ function checkScrollable() {
     todo.classList.remove('scrollable');
   }
 }
+checkScrollable()
 
 
 
