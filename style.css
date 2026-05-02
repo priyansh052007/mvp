@@ -46,8 +46,9 @@ html, body {
 }
 
 .tab.active {
+  height: 4dvh;
   color: #4083f2;
-  border-bottom: 2px solid #5282eb;
+  border-bottom: 3px solid #5282eb;
 }
 
 .todo {
