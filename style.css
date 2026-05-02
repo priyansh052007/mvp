@@ -48,7 +48,11 @@ html, body {
 .tab.active {
   height: 4dvh;
   color: #4083f2;
-  border-bottom: 3px solid #5282eb;
+  border-bottom: 4px solid #5282eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .todo {
