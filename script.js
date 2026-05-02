@@ -53,6 +53,7 @@ function selectTab(tab) {
   currentTab = tab;
   currentOption = "a";
   updateTabs();
+  checkScrollable();
 }
 
 function selectOption(option) {
@@ -67,6 +68,7 @@ function selectOption(option) {
   todo___tabs[3].classList.remove('active');
   currentOption = option;
   updateTabs();
+  checkScrollable();
 }
 
 function updateTabs() {
@@ -220,7 +222,8 @@ function checkScrollable() {
     todo.classList.remove('scrollable');
   }
 }
-checkScrollable();
+window.addEventListener('load', checkScrollable);
+window.addEventListener('resize', checkScrollable);
 
 
 
