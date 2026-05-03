@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+  <link href="sp.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="header">
+      <span id="header_1">School</span>
+      <span class="material-symbols-rounded header_icon">arrow_downward_alt</span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab" id="tab_1" onclick="selectOption('a')">Class</span>
+      <span class="tab" id="tab_2" onclick="selectOption('b')">Class Attendance</span>
+      <span class="tab" id="tab_3" onclick="selectOption('c')"></span>
+    </div>
+
+    <div class="content">
+      <span>AI</span>
+    </div>
+
+    <div class="main_tabs">
+      <div class="main_tab" onclick="selectTab('school')"><span class="material-symbols-rounded main_tabs_icon">school</span>Student</div>
+      <div class="main_tab" onclick="selectTab('class')"><span class="material-symbols-rounded main_tabs_icon">cast_for_education</span>Class</div>
+      <div class="main_tab" onclick="selectTab('subject')"><span class="material-symbols-rounded main_tabs_icon">book</span>Subject</div>
+      <div class="main_tab" onclick="selectTab('teacher')"><span class="material-symbols-rounded main_tabs_icon">groups_3</span>Teacher</div>
+      <div class="main_tab" onclick="selectTab('timetable')"><span class="material-symbols-rounded main_tabs_icon">calendar_clock</span>Timetable</div>
+    </div>
+
+  </div>
+
+  <script src="sp.js"></script>
+
+</body>
+
+</html>
