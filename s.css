@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 5dvh;
+  background: #eaebec;
+  color: #42424f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.header .header_icon {
+  font-size: 90px;
+}
+
+.tabs {
+  height: 4dvh;
+  background: #eaebec;
+  color: #42424f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  gap: 40px;
+}
+
+.tab.active {
+  height: 4dvh;
+  color: #4083f2;
+  /* border-bottom: 4px solid #5282eb; */
+  background: linear-gradient(#5282eb, #5282eb) bottom left;
+  background-size: 70px 4px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.todo {
+  height: 4dvh;
+  width: 100%;
+  background: #ffffe;
+  border-bottom: 2px solid #eaebec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.todo_icons {
+  width: 30%;
+  color: #4184f3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search_icon, .filter_icon {
+  font-size: 35px;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.todo_tabs {
+  width: 70%;
+  color: #a6c0f3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25px;
+  padding: 0 40px;
+  gap: 40px;
+  overflow-x: auto;
+}
+.todo_tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.todo_tab {
+  white-space: nowrap;
+}
+.todo_tab.active {
+  color: #5282eb;
+}
+
+.content {
+  height: 79dvh;
+  background: #ffffe;
+  color: #42424f;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main_tabs {
+  height: 8dvh;
+  background: #eaebec;
+  color: #42424f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_tabs .main_tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  /* padding: 0 40px; */
+}
+.main_tab.active {
+  color: #4083f2;
+}
+
+.main_tabs .main_tabs_icon {
+  font-size: 70px;
+}
+
+
+
+
+/*
+gap: 5px;
+position: fixed;
+bottom: 0;
+width: 100%;
+font-weight: bold;
+*/
