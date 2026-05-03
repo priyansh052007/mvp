@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Student</title>
+  <title>School</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-  <link href="sp.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <div class="app">
 
     <div class="header">
-      <span id="header_1">School</span>
+      <span id="header_1">Class</span>
       <span class="material-symbols-rounded header_icon">arrow_downward_alt</span>
     </div>
 
@@ -24,21 +24,36 @@
       <span class="tab" id="tab_3" onclick="selectOption('c')"></span>
     </div>
 
+    <div class="todo">
+
+      <div class="todo_icons">
+        <span class="material-symbols-rounded search_icon">search</span>
+        <span class="material-symbols-rounded filter_icon">tune</span>
+      </div>
+      <div class="todo_tabs">
+        <span class="todo_tab" id="todo_tab_1">Class</span>
+        <span class="todo_tab" id="todo_tab_2">Add Class</span>
+        <span class="todo_tab" id="todo_tab_3">Update Class</span>
+        <span class="todo_tab" id="todo_tab_4">Remove Class</span>
+      </div>
+
+    </div>
+
     <div class="content">
       <span>AI</span>
     </div>
 
     <div class="main_tabs">
-      <div class="main_tab" onclick="selectTab('school')"><span class="material-symbols-rounded main_tabs_icon">school</span>Student</div>
       <div class="main_tab" onclick="selectTab('class')"><span class="material-symbols-rounded main_tabs_icon">cast_for_education</span>Class</div>
       <div class="main_tab" onclick="selectTab('subject')"><span class="material-symbols-rounded main_tabs_icon">book</span>Subject</div>
+      <div class="main_tab" onclick="selectTab('student')"><span class="material-symbols-rounded main_tabs_icon">id_card</span>Student</div>
       <div class="main_tab" onclick="selectTab('teacher')"><span class="material-symbols-rounded main_tabs_icon">groups_3</span>Teacher</div>
       <div class="main_tab" onclick="selectTab('timetable')"><span class="material-symbols-rounded main_tabs_icon">calendar_clock</span>Timetable</div>
     </div>
 
   </div>
 
-  <script src="sp.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
