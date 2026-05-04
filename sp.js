@@ -40,7 +40,7 @@ function selectTab(tab) {
 }
 
 function updateTabs() {
-  let h1, t1, t2, t3, t4, t5;
+  let h1, t1, t2, t3, t4, t5, c1;
 
   if (currentTab === "school" && currentOption === "a") {
     h1 = "School";
