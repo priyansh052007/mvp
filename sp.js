@@ -39,6 +39,11 @@ function selectTab(tab) {
   updateTabs();
 }
 
+function selectOption(option) {
+  currentOption = option;
+  updateTabs();
+}
+
 function updateTabs() {
   let h1, t1, t2, t3, t4, t5, c1;
 
