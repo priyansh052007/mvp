@@ -121,7 +121,7 @@ function updateTabs() {
     t5 = "";
     c1 = "Missed Topic";
   }
-  else if (currentTab === "subject" && currentOption === "b") {
+  else if (currentTab === "subject" && currentOption === "c") {
     h1 = "Subject";
     t1 = "Subject";
     t2 = "Missed Topic";
