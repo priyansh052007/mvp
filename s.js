@@ -70,7 +70,7 @@ function selectOption(option) {
 }
 
 function updateTabs() {
-  let h1, t1, t2, t3, tt1, tt2, tt3, tt4;
+  let h1, t1, t2, t3, tt1, tt2, tt3, tt4, c1;
 
   if (currentTab === "class" && currentOption === "a") {
     h1 = "Class";
@@ -81,6 +81,7 @@ function updateTabs() {
     tt2 = "Add Class";
     tt3 = "Update Class";
     tt4 = "Remove Class";
+    c1 = "Class";
   } 
   else if (currentTab === "class" && currentOption === "b") {
     h1 = "Class";
@@ -91,6 +92,7 @@ function updateTabs() {
     tt2 = "Add Class Attendance";
     tt3 = "Update Class Attendance";
     tt4 = "";
+    c1 = "Class Attendance";
   }
 
   else if (currentTab === "subject" && currentOption === "a") {
@@ -102,6 +104,7 @@ function updateTabs() {
     tt2 = "Add Subject";
     tt3 = "Update Subject";
     tt4 = "Remove Subject";
+    c1 = "Subject";
   } 
   else if (currentTab === "subject" && currentOption === "b") {
     h1 = "Subject";
@@ -112,6 +115,7 @@ function updateTabs() {
     tt2 = "Add Subject Activity";
     tt3 = "Update Subject Activity";
     tt4 = "Remove Student Activity";
+    c1 = "Subject Activity";
   }
 
   else if (currentTab === "student" && currentOption === "a") {
@@ -123,6 +127,7 @@ function updateTabs() {
     tt2 = "Add Student";
     tt3 = "Update Student";
     tt4 = "Remove Student";
+    c1 = "Student";
   } 
   else if (currentTab === "student" && currentOption === "b") {
     h1 = "Student";
@@ -133,6 +138,7 @@ function updateTabs() {
     tt2 = "";
     tt3 = "";
     tt4 = "";
+    c1 = "Student Attendance";
   }
 
   else if (currentTab === "teacher" && currentOption === "a") {
@@ -144,6 +150,7 @@ function updateTabs() {
     tt2 = "Add Teacher";
     tt3 = "Update Teacher";
     tt4 = "Remove Teacher";
+    c1 = "Teacher";
   } 
   else if (currentTab === "teacher" && currentOption === "b") {
     h1 = "Teacher";
@@ -154,6 +161,7 @@ function updateTabs() {
     tt2 = "Add Teacher Subject";
     tt3 = "Update Teacher Subject";
     tt4 = "Remove Teacher Subject";
+    c1 = "Teacher Subject";
   }
   else if (currentTab === "teacher" && currentOption === "c") {
     h1 = "Teacher";
@@ -164,6 +172,7 @@ function updateTabs() {
     tt2 = "";
     tt3 = "";
     tt4 = "";
+    c1 = "Teacher Attendance";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
@@ -175,6 +184,7 @@ function updateTabs() {
     tt2 = "Add Timeframe Block";
     tt3 = "Update Timetable";
     tt4 = "Remove Timeframe Slot";
+    c1 = "Timetable";
   } 
   else if (currentTab === "timetable" && currentOption === "b") {
     h1 = "Timetable";
@@ -185,6 +195,7 @@ function updateTabs() {
     tt2 = "Add Timeframe Block";
     tt3 = "Update Timetable";
     tt4 = "Remove Timeframe Slot";
+    c1 = "Date Specific Timetable";
   }
   else if (currentTab === "timetable" && currentOption === "c") {
     h1 = "Timetable";
@@ -195,6 +206,7 @@ function updateTabs() {
     tt2 = "Add Exam Timeframe";
     tt3 = "Update Exam Timetable";
     tt4 = "Remove Exam Timeframe";
+    c1 = "Exam Timetable";
   }
 
   document.getElementById("header_1").innerText = h1;
@@ -205,6 +217,7 @@ function updateTabs() {
   document.getElementById("todo_tab_2").innerText = tt2;
   document.getElementById("todo_tab_3").innerText = tt3;
   document.getElementById("todo_tab_4").innerText = tt4;
+  document.getElementById("content_1").innerText = c1;
 }
 
 
