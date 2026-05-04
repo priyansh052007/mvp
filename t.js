@@ -131,18 +131,18 @@ function updateTabs() {
     c1 = "Subject Activity";
   }
 
-  else if (currentTab === "teacher" && currentOption === "a") {
-    h1 = "Teacher";
-    t1 = "Teacher";
+  else if (currentTab === "student" && currentOption === "a") {
+    h1 = "Student";
+    t1 = "Student";
     t2 = "Missed Topic";
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Teacher";
+    c1 = "Student";
   } 
-  else if (currentTab === "teacher" && currentOption === "b") {
-    h1 = "Teacher";
-    t1 = "Teacher";
+  else if (currentTab === "student" && currentOption === "b") {
+    h1 = "Student";
+    t1 = "Student";
     t2 = "Missed Topic";
     t3 = "";
     t4 = "";
