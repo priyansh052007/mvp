@@ -69,6 +69,17 @@ function selectOption(option) {
   updateTabs();
 }
 
+function setTab(id, value) {
+  const el = document.getElementById(id);
+  if (value && value.trim() !== "") {
+    el.innerText = value;
+    el.style.display = "inline-block"; // or flex/block depending on layout
+  } else {
+    el.innerText = "";
+    el.style.display = "none";
+  }
+}
+
 function updateTabs() {
   let h1, t1, t2, t3, tt1, tt2, tt3, tt4, c1;
 
@@ -210,9 +221,14 @@ function updateTabs() {
   }
 
   document.getElementById("header_1").innerText = h1;
+  /*
   document.getElementById("tab_1").innerText = t1;
   document.getElementById("tab_2").innerText = t2;
   document.getElementById("tab_3").innerText = t3;
+  */
+  setTab("tab_1", t1);
+  setTab("tab_2", t2);
+  setTab("tab_3", t3);
   document.getElementById("todo_tab_1").innerText = tt1;
   document.getElementById("todo_tab_2").innerText = tt2;
   document.getElementById("todo_tab_3").innerText = tt3;
