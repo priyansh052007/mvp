@@ -96,17 +96,26 @@ function updateTabs() {
   else if (currentTab === "class" && currentOption === "a") {
     h1 = "Class";
     t1 = "Class";
-    t2 = "";
+    t2 = "Class Attendance";
     t3 = "";
     t4 = "";
     t5 = "";
     c1 = "Class";
   }
+  else if (currentTab === "class" && currentOption === "b") {
+    h1 = "Class";
+    t1 = "Class";
+    t2 = "Class Attendance";
+    t3 = "";
+    t4 = "";
+    t5 = "";
+    c1 = "Class Attendance";
+  }
 
   else if (currentTab === "subject" && currentOption === "a") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Missed Topic";
+    t2 = "Missed Topic Student";
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
@@ -115,16 +124,16 @@ function updateTabs() {
   else if (currentTab === "subject" && currentOption === "b") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Missed Topic";
+    t2 = "Missed Topic Student";
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
-    c1 = "Missed Topic";
+    c1 = "Missed Topic Student";
   }
   else if (currentTab === "subject" && currentOption === "c") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Missed Topic";
+    t2 = "Missed Topic Student";
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
@@ -134,7 +143,7 @@ function updateTabs() {
   else if (currentTab === "student" && currentOption === "a") {
     h1 = "Student";
     t1 = "Student";
-    t2 = "Missed Topic";
+    t2 = "Student Missed Topic";
     t3 = "";
     t4 = "";
     t5 = "";
@@ -143,11 +152,11 @@ function updateTabs() {
   else if (currentTab === "student" && currentOption === "b") {
     h1 = "Student";
     t1 = "Student";
-    t2 = "Missed Topic";
+    t2 = "Student Missed Topic";
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Missed Topic";
+    c1 = "Student Missed Topic";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
