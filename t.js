@@ -44,6 +44,17 @@ function selectOption(option) {
   updateTabs();
 }
 
+function setTab(id, value) {
+  const el = document.getElementById(id);
+  if (value && value.trim() !== "") {
+    el.innerText = value;
+    el.style.display = "inline-block";
+  } else {
+    el.innerText = "";
+    el.style.display = "none";
+  }
+}
+
 function updateTabs() {
   let h1, t1, t2, t3, t4, t5, c1;
 
@@ -188,11 +199,18 @@ function updateTabs() {
   }
 
   document.getElementById("header_1").innerText = h1;
+  /*
   document.getElementById("tab_1").innerText = t1;
   document.getElementById("tab_2").innerText = t2;
   document.getElementById("tab_3").innerText = t3;
   document.getElementById("tab_4").innerText = t4;
   document.getElementById("tab_5").innerText = t5;
+  */
+  setTab("tab_1", t1);
+  setTab("tab_2", t2);
+  setTab("tab_3", t3);
+  setTab("tab_4", t4);
+  setTab("tab_5", t5);
   document.getElementById("content_1").innerText = c1;
 }
 
