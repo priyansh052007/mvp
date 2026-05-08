@@ -19,6 +19,7 @@ html, body {
 
 .profile {
   /* position: fixed; */
+  /* slide and hide bottom */
   bottom: -100%;
   height: 75dvh;
   /* width: 100%; */
