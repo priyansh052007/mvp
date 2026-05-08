@@ -21,7 +21,6 @@ html, body {
   /* position: fixed; */
   bottom: -100%;
   height: 75dvh;
-  width: 100vw;
   background: #eaebec;
   color: #42424f;
   display: flex;
