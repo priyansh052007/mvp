@@ -33,7 +33,7 @@ html, body {
   transition: bottom 0.5s ease;
 }
 .profile.active {
-  bottom: 0;
+  top: 0;
 }
 
 .profile .profile_icon {
