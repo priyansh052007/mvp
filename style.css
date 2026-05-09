@@ -20,6 +20,7 @@ html, body {
 .profile {
   position: fixed;
   top: -75dvh;
+  height: 75dvh;
   width: 100%;
   background: #eaebec;
   color: #42424f;
