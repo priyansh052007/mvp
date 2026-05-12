@@ -36,6 +36,7 @@ tabs.forEach(select_tab => {
 
 
 
+
 let currentTab = "school";
 let currentOption = "a";
 
