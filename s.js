@@ -1,3 +1,15 @@
+function openProfile() {
+    document.getElementById("profile").classList.add("active");
+  }
+
+function closeProfile() {
+    document.getElementById("profile").classList.remove("active");
+  }
+  
+
+
+
+
 const main_tabs = document.querySelectorAll('.main_tab');
 
 main_tabs[0].classList.add('active');
