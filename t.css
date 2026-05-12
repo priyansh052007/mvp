@@ -17,6 +17,30 @@ html, body {
   flex-direction: column;
 }
 
+.profile {
+  position: fixed;
+  top: -45dvh;
+  height: 45dvh;
+  width: 100%;
+  background: #eaebec;
+  color: #42424f;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0 20px;
+  z-index: 999;
+  transition: bottom 0.5s ease;
+}
+.profile.active {
+  top: 0;
+}
+
+.profile .profile_icon {
+  font-size: 80px;
+}
+
 .header {
   height: 5dvh;
   background: #eaebec;
