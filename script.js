@@ -4,7 +4,6 @@ function openProfile() {
     const app = document.querySelector(".app");
     app.style.transform = "translateY(45dvh)";
     app.style.transition = "transform 0.5s ease";
-    document.body.style.overflow = "hidden";
   }
 
 function closeProfile() {
@@ -13,7 +12,6 @@ function closeProfile() {
     const app = document.querySelector(".app");
     app.style.transform = "translateY(0dvh)";
     app.style.transition = "transform 0.5s ease";
-    document.body.style.overflow = "hidden";
   }
 
 
