@@ -3,14 +3,12 @@ const profile = document.getElementById("profile");
 
 function openProfile() {
   profile.classList.add("active");
-  app.style.height = "145dvh";
-  app.style.paddingTop = "45dvh";
+  app.style.marginTop = "45dvh";
 }
 
 function closeProfile() {
   profile.classList.remove("active");
-  app.style.height = "100dvh";
-  app.style.paddingTop = "0";
+  app.style.marginTop = "0";
 }
 
 
