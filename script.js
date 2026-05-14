@@ -1,18 +1,18 @@
-function openProfile() {
-    document.getElementById("profile").classList.add("active");
+const app = document.querySelector(".app");
+const profile = document.getElementById("profile");
 
-    const app = document.querySelector(".app");
-    app.style.transform = "translateY(45dvh)";
-    app.style.transition = "transform 0.5s ease";
-  }
+app.style.transition = "padding-top 0.5s ease";
+profile.style.transition = "top 0.5s ease";
+
+function openProfile() {
+  profile.classList.add("active");
+  app.style.paddingTop = "45dvh";
+}
 
 function closeProfile() {
-    document.getElementById("profile").classList.remove("active");
-
-    const app = document.querySelector(".app");
-    app.style.transform = "translateY(0dvh)";
-    app.style.transition = "transform 0.5s ease";
-  }
+  profile.classList.remove("active");
+  app.style.paddingTop = "0";
+}
 
 
 
