@@ -1,9 +1,6 @@
 const app = document.querySelector(".app");
 const profile = document.getElementById("profile");
 
-app.style.transition = "padding-top 0.5s ease";
-profile.style.transition = "top 0.5s ease";
-
 function openProfile() {
   profile.classList.add("active");
   app.style.paddingTop = "45dvh";
