@@ -31,7 +31,7 @@ html, body {
   font-weight: bold;
   padding: 20px 20px 0px;
   z-index: 999;
-  transition: bottom 0.5s ease;
+  transition: top 0.5s ease;
 }
 .profile.active {
   top: 0;
