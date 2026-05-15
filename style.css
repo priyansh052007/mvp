@@ -11,16 +11,17 @@ html, body {
 }
 
 .app {
+  position: fixed;
   height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   transition: margin-top 0.5s ease;
-  transition: margin-left 0.5s ease;
+  transition: right 0.5s ease;
 }
 
 .profile {
-  position: fixed;
+  /* position: fixed; */
   top: -45dvh;
   height: 45dvh;
   width: 100%;
@@ -61,17 +62,17 @@ html, body {
 }
 
 .main_profile {
-  position: fixed;
-  left: -100vw;
+  /* position: fixed; */
+  right: -100vw;
   height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  transition: left 0.5s ease;
+  transition: right 0.5s ease;
 }
 .main_profile.active {
-  left: 0;
+  right: 0;
 }
 
 .main_profile_header {
