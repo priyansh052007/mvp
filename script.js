@@ -1,6 +1,6 @@
 const app = document.querySelector(".app");
 const profile = document.getElementById("profile");
-const profile = document.getElementById("main_profile");
+const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
   profile.classList.add("active");
