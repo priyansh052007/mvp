@@ -14,7 +14,7 @@ function closeProfile() {
 
 function openMainProfile() {
   profile.classList.remove("active");
-  app.style.marginTop = "100dvh";
+  app.style.marginTop = "0";
   main_profile.classList.add("active");
 }
 
