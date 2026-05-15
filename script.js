@@ -14,14 +14,13 @@ function closeProfile() {
 
 function openMainProfile() {
   profile.classList.remove("active");
-  app.style.marginTop = "0";
+  app.style.marginTop = "100dvh";
   main_profile.classList.add("active");
-  app.style.right = "-100vw";
 }
 
 function closeMainProfile() {
   main_profile.classList.remove("active");
-  app.style.right = "0";
+  app.style.marginTop = "0";
 }
 
 
