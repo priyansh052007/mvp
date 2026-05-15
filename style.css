@@ -26,8 +26,9 @@ html, body {
   background: #eaebec;
   color: #42424f;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
   font-weight: bold;
   padding: 20px 20px 0px;
@@ -38,8 +39,16 @@ html, body {
   top: 0;
 }
 
-.profile .profile_icon {
+.profile_header {
+  
+}
+
+.profile_header .profile_header_icon {
   font-size: 80px;
+}
+
+.profile_content {
+  
 }
 
 .header {
