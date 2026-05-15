@@ -68,7 +68,7 @@ html, body {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  transition: right 0.5s ease;
+  transition: left 0.5s ease;
 }
 .main_profile.active {
   left: 0;
