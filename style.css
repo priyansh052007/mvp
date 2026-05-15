@@ -27,7 +27,7 @@ html, body {
   color: #42424f;
   display: flex;
   flex-direction: column;
-  z-index: 999;
+  z-index: 1;
   transition: top 0.5s ease;
 }
 .profile.active {
