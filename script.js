@@ -16,12 +16,12 @@ function openMainProfile() {
   profile.classList.remove("active");
   app.style.marginTop = "0";
   main_profile.classList.add("active");
-  app.style.marginLeft = "100vw";
+  app.style.right = "-100vw";
 }
 
 function closeMainProfile() {
   main_profile.classList.remove("active");
-  app.style.marginLeft = "0";
+  app.style.right = "0";
 }
 
 
