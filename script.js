@@ -1,5 +1,6 @@
 const app = document.querySelector(".app");
 const profile = document.getElementById("profile");
+const profile = document.getElementById("main_profile");
 
 function openProfile() {
   profile.classList.add("active");
@@ -9,6 +10,18 @@ function openProfile() {
 function closeProfile() {
   profile.classList.remove("active");
   app.style.marginTop = "0";
+}
+
+function openMainProfile() {
+  profile.classList.remove("active");
+  app.style.marginTop = "0";
+  main_profile.classList.add("active");
+  app.style.marginRight = "100dvw";
+}
+
+function closeMainProfile() {
+  main_profile.classList.remove("active");
+  app.style.marginRight = "0";
 }
 
 
