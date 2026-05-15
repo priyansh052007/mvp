@@ -73,8 +73,35 @@ html, body {
   right: 0;
 }
 
-.main_profile .main_profile_header_icon {
+.main_profile_header {
+  height: 5dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  /* padding: 20px 20px 0px; */
+  padding: 0 20px;
+}
+
+.main_profile_header .main_profile_header_icon {
   font-size: 75px;
+}
+
+.main_profile_user {
+  height: 20dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.main_profile_content {
+  height: 75dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 .header {
