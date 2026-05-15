@@ -29,9 +29,6 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  font-weight: bold;
-  padding: 20px 20px 0px;
   z-index: 999;
   transition: top 0.5s ease;
 }
@@ -40,7 +37,13 @@ html, body {
 }
 
 .profile_header {
-  
+  height: 5dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 20px 0px;
 }
 
 .profile_header .profile_header_icon {
@@ -48,7 +51,12 @@ html, body {
 }
 
 .profile_content {
-  
+  height: 40dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .header {
@@ -144,8 +152,10 @@ html, body {
   background: #ffffe;
   color: #42424f;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .main_tabs {
