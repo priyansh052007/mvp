@@ -73,6 +73,10 @@ html, body {
   right: 0;
 }
 
+.main_profile .main_profile_header_icon {
+  font-size: 75px;
+}
+
 .header {
   height: 5dvh;
   background: #eaebec;
