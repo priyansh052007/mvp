@@ -12,7 +12,7 @@ html, body {
 
 .app {
   height: 100dvh;
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   transition: margin-top 0.5s ease;
@@ -59,9 +59,9 @@ html, body {
 
 .main_profile {
   position: fixed;
-  top: -100dvh;
-  height: 100dvh;
-  width: 100%;
+  right: -100dvw;
+  height: 100%;
+  width: 100dvw;
   background: #eaebec;
   color: #42424f;
   display: flex;
@@ -70,7 +70,7 @@ html, body {
   transition: right 0.5s ease;
 }
 .main_profile.active {
-  top: 0;
+  right: 0;
 }
 
 .header {
