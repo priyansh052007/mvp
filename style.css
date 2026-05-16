@@ -70,7 +70,7 @@ html, body {
   transition: right 0.5s ease;
 }
 .main_profile.active {
-  right: 0;
+  right: 100vw;
 }
 
 .main_profile_header {
