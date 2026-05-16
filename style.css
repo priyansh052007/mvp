@@ -10,6 +10,11 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+.app {
+  height: 100dvh;
+  width: 100vw;
+}
+
 .profile {
   position: fixed;
   top: -45dvh;
@@ -104,7 +109,7 @@ html, body {
   font-size: 25px;
 }
 
-.app {
+.features {
   height: 100dvh;
   width: 100vw;
   display: flex;
