@@ -21,7 +21,7 @@ function openMainProfile() {
 
 function closeMainProfile() {
   main_profile.classList.remove("active");
-  app.style.transform = "translateX(-100%)";
+  app.style.transform = "translateX(0)";
 }
 
 
