@@ -10,15 +10,12 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-.app_overlay {
-  position: fixed;
-  width: 100vw;
-}
-
 .profile {
+  position: fixed;
   top: -45dvh;
   left: 0;
   height: 45dvh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -56,9 +53,11 @@ html, body {
 }
 
 .main_profile {
+  position: fixed;
   top: 0;
   right: -100vw;
   height: 100dvh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 2;
