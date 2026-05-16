@@ -1,26 +1,26 @@
-const app = document.querySelector(".app");
+const features = document.querySelector(".features");
 const profile = document.getElementById("profile");
 const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
-  app.style.transform = "translateY(45dvh)";
+  features.style.transform = "translateY(45dvh)";
   profile.classList.add("active");
 }
 
 function closeProfile() {
-  app.style.transform = "translateY(0)";
+  features.style.transform = "translateY(0)";
   profile.classList.remove("active");
 }
 
 function openMainProfile() {
-  app.style.transform = "translateY(0)";
+  features.style.transform = "translateY(0)";
   profile.classList.remove("active");
-  app.style.transform = "translateX(-100vw)";
+  features.style.transform = "translateX(-100vw)";
   main_profile.classList.add("active");
 }
 
 function closeMainProfile() {
-  app.style.transform = "translateX(0)";
+  features.style.transform = "translateX(0)";
   main_profile.classList.remove("active");
 }
 
