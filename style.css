@@ -16,7 +16,6 @@ html, body {
   display: flex;
   flex-direction: column;
   transition: margin-top 0.5s ease;
-  transition: right 0.5s ease;
 }
 
 .profile {
