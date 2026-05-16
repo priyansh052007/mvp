@@ -20,7 +20,6 @@ function openMainProfile() {
 
 function closeMainProfile() {
   main_profile.classList.remove("active");
-  app.style.marginTop = "0";
 }
 
 
