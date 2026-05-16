@@ -4,23 +4,23 @@ const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
   profile.classList.add("active");
-  app.style.marginTop = "45dvh";
+  app.style.top = "45dvh";
 }
 
 function closeProfile() {
   profile.classList.remove("active");
-  app.style.marginTop = "0";
+  app.style.top = "0";
 }
 
 function openMainProfile() {
   profile.classList.remove("active");
-  app.style.marginTop = "0";
+  app.style.top = "0";
   main_profile.classList.add("active");
 }
 
 function closeMainProfile() {
   main_profile.classList.remove("active");
-  app.style.marginTop = "0";
+  app.style.top = "0";
 }
 
 
