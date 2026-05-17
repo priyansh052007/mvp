@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-/* ---------- PANELS ---------- */
+/* ---------- Profile MainProfile ---------- */
 
 .profile,
 .main_profile {
@@ -111,7 +111,7 @@ body {
   font-size: 90px;
 }
 
-/* ---------- CONTENT SECTIONS ---------- */
+/* ---------- CONTENT ---------- */
 
 .profile_content,
 .main_profile_user,
@@ -145,7 +145,7 @@ body {
   flex-direction: column;
 }
 
-/* ---------- TOP TABS ---------- */
+/* ---------- Tab Tabs ---------- */
 
 .tabs {
   height: var(--tabs-h);
@@ -172,7 +172,7 @@ body {
     bottom center / 70px 4px no-repeat;
 }
 
-/* ---------- TODO ---------- */
+/* ---------- Todo TodoTabs ---------- */
 
 .todo {
   height: var(--tabs-h);
@@ -234,7 +234,7 @@ body {
   flex: 1;
 }
 
-/* ---------- BOTTOM NAV ---------- */
+/* ---------- MainTabs ---------- */
 
 .main_tabs {
   height: var(--bottom-h);
