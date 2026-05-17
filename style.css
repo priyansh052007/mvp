@@ -1,71 +1,4 @@
-:root {
-  --bg: #eaebec;
-  --white: #fafafb;
-  --text: #42424f;
-  --primary: #5282eb;
-  --primary-light: #a6c0f3;
-
-  --header-h: 5dvh;
-  --tabs-h: 4dvh;
-  --bottom-h: 8dvh;
-}
-
-body {
-  color: var(--text);
-}
-
-.app {
-  width: 100vw;
-  height: 100dvh;
-  overflow: hidden;
-}
-
-/* ---------- COMMON FLEX ---------- */
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* ---------- Profile MainProfile ---------- */
-
-.profile,
-.main_profile {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s ease;
-}
-
-.profile {
-  inset: -45dvh 0 auto 0;
-  height: 45dvh;
-  z-index: 1;
-}
-
-.profile.active {
-  transform: translateY(45dvh);
-}
-
-.main_profile {
-  inset: 0 -100vw 0 auto;
-  height: 100dvh;
-  z-index: 2;
-}
-
-.main_profile.active {
-  transform: translateX(-100vw);
-}
-
-/* ---------- HEADERS ---------- */
+/* ---------- HEADERS ----------
 
 .profile_header,
 .main_profile_header,
@@ -98,7 +31,7 @@ body {
   font-size: 90px;
 }
 
-/* ---------- CONTENT ---------- */
+/* ---------- CONTENT ---------- 
 
 .profile_content,
 .main_profile_user,
@@ -124,7 +57,7 @@ body {
   flex: 0 0 20dvh;
 }
 
-/* ---------- FEATURES ---------- */
+/* ---------- FEATURES ---------- 
 
 .features {
   height: 100%;
@@ -132,7 +65,7 @@ body {
   flex-direction: column;
 }
 
-/* ---------- Tab Tabs ---------- */
+/* ---------- Tab Tabs ---------- 
 
 .tabs {
   height: var(--tabs-h);
@@ -159,7 +92,7 @@ body {
     bottom center / 70px 4px no-repeat;
 }
 
-/* ---------- Todo TodoTabs ---------- */
+/* ---------- Todo TodoTabs ---------- 
 
 .todo {
   height: var(--tabs-h);
@@ -215,13 +148,13 @@ body {
   color: var(--primary);
 }
 
-/* ---------- MAIN CONTENT ---------- */
+/* ---------- MAIN CONTENT ---------- 
 
 .content {
   flex: 1;
 }
 
-/* ---------- MainTabs ---------- */
+/* ---------- MainTabs ---------- 
 
 .main_tabs {
   height: var(--bottom-h);
@@ -244,7 +177,7 @@ body {
   color: var(--primary);
 }
 
-
+*/
 
 
 
