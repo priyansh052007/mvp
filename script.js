@@ -4,7 +4,7 @@ const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
   features.style.pointerEvents = "none";
-  features.style.opacity = "0.5";
+  features.style.opacity = "0.4";
   features.style.transform = "translateY(45dvh)";
   profile.classList.add("active");
 }
@@ -12,7 +12,7 @@ function openProfile() {
 function closeProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
-  features.style.opacity = "0.5";
+  features.style.opacity = "1";
   features.style.pointerEvents = "auto";
 }
 
@@ -26,7 +26,7 @@ function openMainProfile() {
 function closeMainProfile() {
   main_profile.classList.remove("active");
   features.style.transform = "translateX(0)";
-  features.style.opacity = "0.5";
+  features.style.opacity = "1";
   features.style.pointerEvents = "auto";
 }
 
