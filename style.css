@@ -194,6 +194,7 @@ html, body {
 }
 
 .app {
+  inset: 0;
   height: 100dvh;
   width: 100vw;
 }
@@ -289,6 +290,7 @@ html, body {
 }
 
 .features {
+  inset: 0;
   height: 100dvh;
   width: 100vw;
   display: flex;
