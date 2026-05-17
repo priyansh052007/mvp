@@ -8,20 +8,20 @@ function openProfile() {
 }
 
 function closeProfile() {
-  features.style.transform = "translateY(0)";
   profile.classList.remove("active");
+  features.style.transform = "translateY(0)";
 }
 
 function openMainProfile() {
-  features.style.transform = "translateY(0)";
   profile.classList.remove("active");
+  features.style.transform = "translateY(0)";
   features.style.transform = "translateX(-100vw)";
   main_profile.classList.add("active");
 }
 
 function closeMainProfile() {
-  features.style.transform = "translateX(0)";
   main_profile.classList.remove("active");
+  features.style.transform = "translateX(0)";
 }
 
 
