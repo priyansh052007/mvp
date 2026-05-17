@@ -289,7 +289,7 @@ html, body {
   color: #42424f;
   font-size: 50px;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0dvh 2vw 0dvh 4vw;
 }
 .profile_header .profile_header_icon {
   font-size: 75px;
@@ -307,53 +307,51 @@ html, body {
 
 .main_profile {
   position: fixed;
-  top: 0;
   right: -100vw;
+  top: 0;
   height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  transition: right 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .main_profile.active {
-  right: 0;
+  transform: translateY(0);
 }
 
 .main_profile_header {
   height: 5dvh;
-  background: #eaebec;
-  color: #42424f;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #eaebec;
+  color: #42424f;
   font-size: 50px;
   font-weight: bold;
-  /* padding: 20px 20px 0px; */
-  padding: 0px 20px 0px 10px;
+  padding: 0dvh 4vw 0dvh 2vw;
 }
-
 .main_profile_header .main_profile_header_icon {
   font-size: 70px;
 }
 
 .main_profile_user {
   height: 20dvh;
-  background: #fafafb;
-  color: #42424f;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #fafafb;
+  color: #42424f;
   font-size: 25px;
 }
 
 .main_profile_content {
   height: 75dvh;
-  background: #ffffe;
-  color: #42424f;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffffe;
+  color: #42424f;
   font-size: 25px;
 }
 
