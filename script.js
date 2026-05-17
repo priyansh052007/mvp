@@ -3,6 +3,8 @@ const profile = document.getElementById("profile");
 const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
+  features.style.pointerEvents = "none";
+  features.style.opacity = "0.5";
   features.style.transform = "translateY(45dvh)";
   profile.classList.add("active");
 }
@@ -10,11 +12,15 @@ function openProfile() {
 function closeProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
+  features.style.opacity = "0.5";
+  features.style.pointerEvents = "none";
 }
 
 function openMainProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
+  features.style.opacity = "0.5";
+  features.style.pointerEvents = "none";
   features.style.transform = "translateX(-100vw)";
   main_profile.classList.add("active");
 }
