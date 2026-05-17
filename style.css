@@ -175,7 +175,7 @@ html, body {
 }
 .search_icon, .filter_icon {
   font-size: 35px;
-  padding: 0 20px;
+  padding: 0 2vw;
   white-space: nowrap;
 }
 
@@ -186,8 +186,8 @@ html, body {
   align-items: center;
   color: #a6c0f3;
   font-size: 25px;
-  padding: 0 40px;
-  gap: 40px;
+  padding: 0 3vw;
+  gap: 3vw;
   overflow-x: auto;
 }
 .todo_tabs::-webkit-scrollbar {
