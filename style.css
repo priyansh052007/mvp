@@ -142,6 +142,7 @@ html, body {
 }
 
 .tab {
+  height: 4dvh;
   display: flex;
   justify-content: center;
   align-items: center;
