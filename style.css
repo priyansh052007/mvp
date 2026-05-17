@@ -10,19 +10,6 @@
   --bottom-h: 8dvh;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
-}
-
 body {
   color: var(--text);
 }
@@ -269,7 +256,6 @@ body {
 }
 
 html, body {
-  height: 100%;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
@@ -281,43 +267,41 @@ html, body {
 
 .profile {
   position: fixed;
-  top: -45dvh;
   left: 0;
+  top: -45dvh;
   height: 45dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   z-index: 1;
-  transition: top 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .profile.active {
-  top: 0;
+  transform: translateY(45dvh);
 }
 
 .profile_header {
   height: 5dvh;
-  background: #eaebec;
-  color: #42424f;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #eaebec;
+  color: #42424f;
   font-size: 50px;
   font-weight: bold;
-  /* padding: 20px 20px 0px; */
   padding: 0 20px;
 }
-
 .profile_header .profile_header_icon {
   font-size: 75px;
 }
 
 .profile_content {
   height: 40dvh;
-  background: #eaebec;
-  color: #42424f;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #eaebec;
+  color: #42424f;
   font-size: 25px;
 }
 
