@@ -141,16 +141,18 @@ html, body {
   gap: 40px;
 }
 
-.tab.active {
+.tab {
   height: 4dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+}
+.tab.active {
   background: linear-gradient(#5282eb, #5282eb) bottom left;
   background-size: 70px 4px;
   background-repeat: no-repeat;
   color: #4083f2;
-  white-space: nowrap;
 }
 
 .todo {
