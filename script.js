@@ -109,7 +109,7 @@ function setTab(id, value) {
   const el = document.getElementById(id);
   if (value && value.trim() !== "") {
     el.innerText = value;
-    el.style.display = "inline-block"; // or flex/block depending on layout
+    el.style.display = "flex";
   } else {
     el.innerText = "";
     el.style.display = "none";
