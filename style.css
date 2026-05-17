@@ -147,7 +147,7 @@ html, body {
   align-items: center;
   white-space: nowrap;
 }
-.tab.active {
+.tab.active:after {
   background: linear-gradient(#5282eb, #5282eb) bottom left;
   background-size: 70px 4px;
   background-repeat: no-repeat;
