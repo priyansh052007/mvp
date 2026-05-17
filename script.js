@@ -13,14 +13,12 @@ function closeProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
   features.style.opacity = "0.5";
-  features.style.pointerEvents = "none";
+  features.style.pointerEvents = "auto";
 }
 
 function openMainProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
-  features.style.opacity = "0.5";
-  features.style.pointerEvents = "none";
   features.style.transform = "translateX(-100vw)";
   main_profile.classList.add("active");
 }
@@ -28,6 +26,8 @@ function openMainProfile() {
 function closeMainProfile() {
   main_profile.classList.remove("active");
   features.style.transform = "translateX(0)";
+  features.style.opacity = "0.5";
+  features.style.pointerEvents = "auto";
 }
 
 
