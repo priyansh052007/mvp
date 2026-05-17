@@ -250,7 +250,7 @@ html, body {
   transition: transform 0.5s ease;
 }
 .main_profile.active {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .main_profile_header {
