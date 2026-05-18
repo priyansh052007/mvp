@@ -17,7 +17,7 @@ html, body {
 
 .profile {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   inset: 0;
   height: 45dvh;
   width: 100vw;
@@ -57,7 +57,7 @@ html, body {
 
 .main_profile {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   inset: 0;
   height: 100dvh;
   width: 100vw;
@@ -103,6 +103,42 @@ html, body {
   background: #ffffe;
   color: #42424f;
   font-size: 25px;
+}
+
+.search {
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  height: 60dvh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.search.active {
+  transform: translateX(0);
+}
+.search .search_icon {
+  font-size: 60px;
+}
+
+.filter {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  height: 60dvh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.filter.active {
+  transform: translateX(0);
+}
+.filter .filter_icon {
+  font-size: 60px;
 }
 
 .features {
