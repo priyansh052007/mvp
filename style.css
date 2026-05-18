@@ -119,7 +119,7 @@ html, body {
 }
 .search.active {
   left: 10vw;
-  right: 22dvh;
+  top: 22dvh;
   transform: translateX(0);
 }
 .search .search_close_icon {
@@ -140,7 +140,7 @@ html, body {
 }
 .filter.active {
   left: 10vw;
-  right: 22dvh;
+  top: 22dvh;
   transform: translateX(0);
 }
 .filter .filter_close_icon {
