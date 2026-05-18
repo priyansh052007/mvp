@@ -43,14 +43,14 @@
 
     </div>
 
-    <div class="search" onclick="openSearch()">
+    <div class="search">
       <div>School</div>
-      <span class="material-symbols-rounded search_icon" onclick="closeSearch()">close</span>
+      <span class="material-symbols-rounded search_close_icon" onclick="closeSearch()">close</span>
     </div>
     
-    <div class="filter" onclick="openFilter()">
+    <div class="filter">
       <div>School</div>
-      <span class="material-symbols-rounded filter_icon" onclick="closeFilter()">close</span>
+      <span class="material-symbols-rounded filter_close_icon" onclick="closeFilter()">close</span>
     </div>
 
     <div class="features">
@@ -69,8 +69,8 @@
       <div class="todo">
 
         <div class="todo_icons">
-          <span class="material-symbols-rounded search_icon">search</span>
-          <span class="material-symbols-rounded filter_icon">tune</span>
+          <span class="material-symbols-rounded search_icon" onclick="openSearch()">search</span>
+          <span class="material-symbols-rounded filter_icon" onclick="openFilter()">tune</span>
         </div>
 
         <div class="todo_tabs">
