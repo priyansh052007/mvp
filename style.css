@@ -140,6 +140,12 @@ html, body {
 .search_todo, .search_done {
   font-weight: bold;
 }
+.search_todo {
+  color: #4083f2;
+}
+.search_done {
+  opacity: 0.4;
+}
 
 .search_content {
   height: 56dvh;
@@ -182,8 +188,14 @@ html, body {
   font-size: 28px;
 }
 .filter_todo, .filter_done {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
+.filter_todo {
+  color: #4083f2;
+}
+.filter_done {
+  opacity: 0.4;
+}
 
 .filter_content {
   height: 56dvh;
