@@ -113,6 +113,8 @@ html, body {
   width: 80vw;
   display: flex;
   flex-direction: column;
+  background: #eaebec;
+  color: #42424f;
   transform: translateX(-100%);
 }
 .search.active {
@@ -130,6 +132,8 @@ html, body {
   width: 80vw;
   display: flex;
   flex-direction: column;
+  background: #eaebec;
+  color: #42424f;
   transform: translateX(-100%);
 }
 .filter.active {
