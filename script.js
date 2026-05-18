@@ -1,6 +1,8 @@
 const features = document.querySelector(".features");
 const profile = document.getElementById("profile");
 const main_profile = document.getElementById("main_profile");
+const search = document.getElementById("search");
+const filter = document.getElementById("filter");
 
 function openProfile() {
   features.style.pointerEvents = "none";
