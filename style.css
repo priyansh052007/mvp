@@ -258,10 +258,10 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   color: #4184f3;
+  padding: 0dvh 2vw 0dvh 3vw;
 }
 .search_icon, .filter_icon {
-  font-size: 36px;
-  padding: 0 3vw;
+  font-size: 38px;
   white-space: nowrap;
 }
 
