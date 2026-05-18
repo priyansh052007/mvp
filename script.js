@@ -4,6 +4,8 @@ const main_profile = document.getElementById("main_profile");
 
 function openProfile() {
   features.style.pointerEvents = "none";
+  features.style.userSelect = 'none';
+  features.style.webkitUserDrag = 'none';
   features.style.opacity = "0.4";
   features.style.transform = "translateY(45dvh)";
   profile.classList.add("active");
@@ -13,6 +15,8 @@ function closeProfile() {
   profile.classList.remove("active");
   features.style.transform = "translateY(0)";
   features.style.opacity = "1";
+  features.style.userSelect = 'auto';
+  features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
 }
 
@@ -27,30 +31,40 @@ function closeMainProfile() {
   main_profile.classList.remove("active");
   features.style.transform = "translateX(0)";
   features.style.opacity = "1";
+  features.style.userSelect = 'auto';
+  features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
 }
 
 function openSearch() {
   features.style.pointerEvents = "none";
   features.style.opacity = "0.4";
+  features.style.userSelect = 'none';
+  features.style.webkitUserDrag = 'none';
   search.classList.add("active");
 }
 
 function closeSearch() {
   search.classList.remove("active");
   features.style.opacity = "1";
+  features.style.userSelect = 'auto';
+  features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
 }
 
 function openFilter() {
   features.style.pointerEvents = "none";
   features.style.opacity = "0.4";
+  features.style.userSelect = 'none';
+  features.style.webkitUserDrag = 'none';
   filter.classList.add("active");
 }
 
 function closeFilter() {
   filter.classList.remove("active");
   features.style.opacity = "1";
+  features.style.userSelect = 'auto';
+  features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
 }
 
