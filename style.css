@@ -110,7 +110,7 @@ html, body {
   z-index: 1;
   inset: 0;
   height: 60dvh;
-  width: 80vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   background: #eaebec;
@@ -118,7 +118,7 @@ html, body {
   transform: translateX(-100%);
 }
 .search.active {
-  left: 10vw;
+  left: 5vw;
   top: 22dvh;
   transform: translateX(0);
 }
@@ -131,7 +131,7 @@ html, body {
   z-index: 2;
   inset: 0;
   height: 60dvh;
-  width: 80vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   background: #eaebec;
@@ -139,7 +139,7 @@ html, body {
   transform: translateX(-100%);
 }
 .filter.active {
-  left: 10vw;
+  left: 5vw;
   top: 22dvh;
   transform: translateX(0);
 }
