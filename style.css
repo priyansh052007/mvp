@@ -108,13 +108,13 @@ html, body {
 .search {
   position: fixed;
   z-index: 1;
-  overflow: hidden;
   inset: 0;
   height: 60dvh;
   width: 90vw;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 10px;
+  overflow: hidden;
   transform: translateX(-100%);
 }
 .search.active {
@@ -140,13 +140,13 @@ html, body {
 .filter {
   position: fixed;
   z-index: 2;
-  overflow: hidden;
   inset: 0;
   height: 60dvh;
   width: 90vw;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 10px;
+  overflow: hidden;
   transform: translateX(-100%);
 }
 .filter.active {
