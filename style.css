@@ -131,7 +131,7 @@ html, body {
   color: #42424f;
   font-size: 30px;
 }
-.search_header .search_todo, .search_done {
+.search_todo, .search_done {
   font-weight: bold;
 }
 
