@@ -118,6 +118,8 @@ html, body {
   transform: translateX(-100%);
 }
 .search.active {
+  left: 10;
+  right: 22;
   transform: translateX(0);
 }
 .search .search_close_icon {
@@ -137,6 +139,8 @@ html, body {
   transform: translateX(-100%);
 }
 .filter.active {
+  left: 10;
+  right: 22;
   transform: translateX(0);
 }
 .filter .filter_close_icon {
