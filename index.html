@@ -44,13 +44,19 @@
     </div>
 
     <div class="search" id="search">
-      <div>School</div>
-      <span class="material-symbols-rounded search_close_icon" onclick="closeSearch()">close</span>
+      <div class="search_header">
+        <div class="search_cancel" onclick="closeSearch()">Cancel</div>
+        <div id="search_todo">Search</div>
+        <div id="search_done">Done</div>
+      </div>
     </div>
-    
+
     <div class="filter" id="filter">
-      <div>School</div>
-      <span class="material-symbols-rounded filter_close_icon" onclick="closeFilter()">close</span>
+      <div class="filter_header">
+        <div class="filter_cancel" onclick="closeFilter()">Cancel</div>
+        <div id="filter_todo">Filter</div>
+        <div id="filter_done">Done</div>
+      </div>
     </div>
 
     <div class="features">
