@@ -1,3 +1,44 @@
+const main_tabs = document.querySelectorAll('.main_tab');
+
+main_tabs[0].classList.add('active');
+
+main_tabs.forEach(click_tab => {
+  click_tab.addEventListener('click', () => {
+    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
+    click_tab.classList.add('active');
+  });
+});
+
+
+const tabs = document.querySelectorAll('.tab');
+
+tabs[0].classList.add('active');
+
+tabs.forEach(select_tab => {
+  select_tab.addEventListener('click', () => {
+    tabs.forEach(select_tab => select_tab.classList.remove('active'));
+    select_tab.classList.add('active');
+  });
+});
+
+
+const todo_tabs = document.querySelectorAll('.todo_tab');
+
+todo_tabs[0].classList.add('active');
+let c1 = todo_tabs[0].textContent;
+
+todo_tabs.forEach(find_tab => {
+  find_tab.addEventListener('click', () => {
+    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
+    find_tab.classList.add('active');
+    c1 = find_tab.textContent;
+  });
+});
+
+
+
+
+
 const features = document.querySelector(".features");
 const profile = document.getElementById("profile");
 const main_profile = document.getElementById("main_profile");
@@ -44,6 +85,7 @@ function openSearch() {
   features.style.userSelect = 'none';
   features.style.webkitUserDrag = 'none';
   search.classList.add("active");
+  document.getElementById("search_todo").innerText = c1;
 }
 
 function closeSearch() {
@@ -52,6 +94,7 @@ function closeSearch() {
   features.style.userSelect = 'auto';
   features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
+  document.getElementById("search_todo").innerText = "search";
 }
 
 function openFilter() {
@@ -60,6 +103,7 @@ function openFilter() {
   features.style.userSelect = 'none';
   features.style.webkitUserDrag = 'none';
   filter.classList.add("active");
+  document.getElementById("filter_todo").innerText = c1;
 }
 
 function closeFilter() {
@@ -68,48 +112,8 @@ function closeFilter() {
   features.style.userSelect = 'auto';
   features.style.webkitUserDrag = 'auto';
   features.style.pointerEvents = "auto";
+  document.getElementById("filter_todo").innerText = "filter";
 }
-
-
-
-
-
-const main_tabs = document.querySelectorAll('.main_tab');
-
-main_tabs[0].classList.add('active');
-
-main_tabs.forEach(click_tab => {
-  click_tab.addEventListener('click', () => {
-    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
-    click_tab.classList.add('active');
-  });
-});
-
-
-const tabs = document.querySelectorAll('.tab');
-
-tabs[0].classList.add('active');
-
-tabs.forEach(select_tab => {
-  select_tab.addEventListener('click', () => {
-    tabs.forEach(select_tab => select_tab.classList.remove('active'));
-    select_tab.classList.add('active');
-  });
-});
-
-
-const todo_tabs = document.querySelectorAll('.todo_tab');
-
-todo_tabs[0].classList.add('active');
-let c1 = todo_tabs[0].textContent;
-
-todo_tabs.forEach(find_tab => {
-  find_tab.addEventListener('click', () => {
-    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
-    find_tab.classList.add('active');
-    c1 = find_tab.textContent;
-  });
-});
 
 
 
