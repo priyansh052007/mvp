@@ -278,7 +278,7 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   color: #a6c0f3;
-  padding: 0dvh 1vw 0dvh 0vw;
+  padding: 0dvh 2vw 0dvh 0vw;
   gap: 4vw;
   font-size: 28px;
   overflow-x: auto;
