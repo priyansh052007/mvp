@@ -108,6 +108,7 @@ html, body {
 .search {
   position: fixed;
   z-index: 1;
+  overflow: hidden;
   inset: 0;
   height: 60dvh;
   width: 90vw;
@@ -130,6 +131,7 @@ html, body {
   background: #eaebec;
   color: #42424f;
   font-size: 30px;
+  padding: 0 2vw;
 }
 .search_todo, .search_done {
   font-weight: bold;
@@ -138,6 +140,7 @@ html, body {
 .filter {
   position: fixed;
   z-index: 2;
+  overflow: hidden;
   inset: 0;
   height: 60dvh;
   width: 90vw;
@@ -160,6 +163,7 @@ html, body {
   background: #eaebec;
   color: #42424f;
   font-size: 30px;
+  padding: 0 2vw;
 }
 .filter_todo, .filter_done {
     font-weight: bold;
@@ -245,7 +249,7 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   color: #a6c0f3;
-  font-size: 25px;
+  font-size: 30px;
   padding: 0 3vw;
   gap: 3vw;
   overflow-x: auto;
