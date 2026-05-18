@@ -128,7 +128,7 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
-  font-size: 25px;
+  font-size: 30px;
 }
 .search_header .search_todo, .search_done {
   font-weight: bold;
@@ -157,11 +157,11 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
-  font-size: 25px;
-  .filter_todo, .filter_done {
+  font-size: 30px;
+}
+.filter_todo, .filter_done {
     font-weight: bold;
   }
-}
 
 .features {
   inset: 0;
