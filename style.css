@@ -159,7 +159,7 @@ html, body {
   color: #42424f;
   font-size: 25px;
   .filter_todo, .filter_done {
-  font-weight: bold;
+    font-weight: bold;
   }
 }
 
