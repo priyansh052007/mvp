@@ -114,7 +114,6 @@ html, body {
   display: flex;
   flex-direction: column;
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
 }
 .search.active {
   transform: translateX(0);
@@ -132,7 +131,6 @@ html, body {
   display: flex;
   flex-direction: column;
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
 }
 .filter.active {
   transform: translateX(0);
