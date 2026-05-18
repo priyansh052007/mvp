@@ -130,11 +130,22 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
+  border-bottom: 2px solid #eaebec;
   font-size: 30px;
   padding: 0 2vw;
 }
 .search_todo, .search_done {
   font-weight: bold;
+}
+
+.search_content {
+  height: 56dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaebec;
+  color: #42424f;
+  font-size: 25px;
 }
 
 .filter {
@@ -162,12 +173,23 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
+  border-bottom: 2px solid #eaebec;
   font-size: 30px;
   padding: 0 2vw;
 }
 .filter_todo, .filter_done {
     font-weight: bold;
   }
+
+.filter_content {
+  height: 56dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaebec;
+  color: #42424f;
+  font-size: 25px;
+}
 
 .features {
   inset: 0;
