@@ -30,6 +30,30 @@ function closeMainProfile() {
   features.style.pointerEvents = "auto";
 }
 
+function openSearch() {
+  features.style.pointerEvents = "none";
+  features.style.opacity = "0.4";
+  search.classList.add("active");
+}
+
+function closeSearch() {
+  search.classList.remove("active");
+  features.style.opacity = "1";
+  features.style.pointerEvents = "auto";
+}
+
+function openFilter() {
+  features.style.pointerEvents = "none";
+  features.style.opacity = "0.4";
+  filter.classList.add("active");
+}
+
+function closeFilter() {
+  filter.classList.remove("active");
+  features.style.opacity = "1";
+  features.style.pointerEvents = "auto";
+}
+
 
 
 
