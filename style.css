@@ -120,7 +120,7 @@ html, body {
 .search.active {
   transform: translateX(0);
 }
-.search .search_icon {
+.search .search_close_icon {
   font-size: 60px;
 }
 
@@ -139,7 +139,7 @@ html, body {
 .filter.active {
   transform: translateX(0);
 }
-.filter .filter_icon {
+.filter .filter_close_icon {
   font-size: 60px;
 }
 
