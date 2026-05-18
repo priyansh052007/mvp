@@ -128,7 +128,7 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
-  font-size: 40px;
+  font-size: 25px;
 }
 .search_todo, .search_done {
   font-weight: bold;
@@ -157,7 +157,7 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
-  font-size: 40px;
+  font-size: 25px;
 }
 .filter_todo, .filter_done {
   font-weight: bold;
