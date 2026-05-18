@@ -113,6 +113,7 @@ html, body {
   width: 90vw;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   transform: translateX(-100%);
 }
 .search.active {
@@ -142,6 +143,7 @@ html, body {
   width: 90vw;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   transform: translateX(-100%);
 }
 .filter.active {
