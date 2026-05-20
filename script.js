@@ -25,16 +25,17 @@ tabs.forEach(select_tab => {
 const todo_tabs = document.querySelectorAll('.todo_tab');
 
 todo_tabs[0].classList.add('active');
-let c1 = todo_tabs[0].textContent;
 
 todo_tabs.forEach(find_tab => {
   find_tab.addEventListener('click', () => {
     todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
     find_tab.classList.add('active');
-    c1 = find_tab.textContent;
   });
 });
 
+
+const todo_tabs_active = document.querySelectorAll('.todo_tab.active').textContent;
+document.getElementById("content_1").innerText = todo_tabs_active;
 
 
 
@@ -303,7 +304,6 @@ function updateTabs() {
   document.getElementById("todo_tab_2").innerText = tt2;
   document.getElementById("todo_tab_3").innerText = tt3;
   document.getElementById("todo_tab_4").innerText = tt4;
-  document.getElementById("content_1").innerText = c1;
 }
 
 
