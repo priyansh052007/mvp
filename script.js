@@ -316,7 +316,7 @@ function updateTabs() {
 
 
 
-
+/*
 
 
 const main_tabs = document.querySelectorAll('.main_tab');
@@ -369,7 +369,7 @@ todo_tabs.forEach((find_tab, find_index) => {
 });
 
 
-
+*/
 
 
 
