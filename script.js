@@ -342,8 +342,8 @@ setActive(todo_tabs, 0);
 updateContent(0);
 
 
-main_tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => {
+main_tabs.forEach((find_tab, i) => {
+  find_tab.addEventListener('click', () => {
     setActive(main_tabs, i);
     setActive(todo_tabs, 0);
     updateContent(0);
@@ -351,8 +351,8 @@ main_tabs.forEach((tab, i) => {
 });
 
 
-tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => {
+tabs.forEach((find_tab, i) => {
+  find_tab.addEventListener('click', () => {
     setActive(tabs, i);
     setActive(todo_tabs, 0);
     updateContent(0);
@@ -360,8 +360,8 @@ tabs.forEach((tab, i) => {
 });
 
 
-todo_tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => {
+todo_tabs.forEach((find_tab, i) => {
+  find_tab.addEventListener('click', () => {
     setActive(todo_tabs, i);
     updateContent(i);
   });
