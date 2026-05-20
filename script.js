@@ -41,6 +41,54 @@ main_tabs.forEach(click_tab => {
     document.getElementById("content_1").innerText = todo_tabs_active;
   });
 });*/
+const main_tabs = document.querySelectorAll('.main_tab');
+const tabs = document.querySelectorAll('.tab');
+const todo_tabs = document.querySelectorAll('.todo_tab');
+let updateTodoTabsActive
+
+
+function setActive(nodeList, index) {
+  nodeList.forEach(el => el.classList.remove('active'));
+  nodeList[index].classList.add('active');
+}
+
+
+function updateTodoTabsActive(index) {
+  todo_tabs_active = todo_tabs[index].textContent;
+}
+
+
+setActive(main_tabs, 0);
+setActive(tabs, 0);
+setActive(todo_tabs, 0);
+updateTodoTabsActive(0);
+
+
+main_tabs.forEach((find_tab, find_index) => {
+  find_tab.addEventListener('click', () => {
+    setActive(main_tabs, find_index);
+    setActive(tabs, 0);
+    setActive(todo_tabs, 0);
+    updateTodoTabsActive(0);
+  });
+});
+
+
+tabs.forEach((find_tab, find_index) => {
+  find_tab.addEventListener('click', () => {
+    setActive(tabs, find_index);
+    setActive(todo_tabs, 0);
+    updateTodoTabsActive(0);
+  });
+});
+
+
+todo_tabs.forEach((find_tab, find_index) => {
+  find_tab.addEventListener('click', () => {
+    setActive(todo_tabs, find_index);
+    updateTodoTabsActive(find_index);
+  });
+});
 
 
 
