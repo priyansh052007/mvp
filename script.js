@@ -371,7 +371,7 @@ function updateTabs() {
 const main_tabs = document.querySelectorAll('.main_tab');
 const tabs = document.querySelectorAll('.tab');
 const todo_tabs = document.querySelectorAll('.todo_tab');
-let updateTodoTabsActive
+let todo_tabs_active;
 
 
 function setActive(nodeList, index) {
@@ -382,6 +382,7 @@ function setActive(nodeList, index) {
 
 function updateTodoTabsActive(index) {
   todo_tabs_active = todo_tabs[index].textContent;
+  document.getElementById("content_1").innerText = todo_tabs_active;
 }
 
 
