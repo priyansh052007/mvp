@@ -1,10 +1,13 @@
 const todo_tabs = document.querySelectorAll('.todo_tab');
 
 todo_tabs[0].classList.add('active');
+let todo_tabs_active = todo_tabs[0].textContent;
+document.getElementById("content_1").innerText = todo_tabs_active;
+ 
 
 todo_tabs.forEach(find_tab => {
   find_tab.addEventListener('click', () => {
-    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
+    todo_tabs.forEach(find__tab => find__tab.classList.remove('active'));
     find_tab.classList.add('active');
     todo_tabs_active = find_tab.textContent;
     document.getElementById("content_1").innerText = todo_tabs_active;
@@ -18,7 +21,7 @@ tabs[0].classList.add('active');
 
 tabs.forEach(select_tab => {
   select_tab.addEventListener('click', () => {
-    tabs.forEach(select_tab => select_tab.classList.remove('active'));
+    tabs.forEach(select__tab => select__tab.classList.remove('active'));
     select_tab.classList.add('active');
     todo_tabs_active = todo_tabs[0].textContent;
     document.getElementById("content_1").innerText = todo_tabs_active;
@@ -32,7 +35,7 @@ main_tabs[0].classList.add('active');
 
 main_tabs.forEach(click_tab => {
   click_tab.addEventListener('click', () => {
-    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
+    main_tabs.forEach(click__tab => click__tab.classList.remove('active'));
     click_tab.classList.add('active');
     todo_tabs_active = todo_tabs[0].textContent;
     document.getElementById("content_1").innerText = todo_tabs_active;
