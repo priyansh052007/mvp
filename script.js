@@ -1,11 +1,13 @@
-const main_tabs = document.querySelectorAll('.main_tab');
+const todo_tabs = document.querySelectorAll('.todo_tab');
 
-main_tabs[0].classList.add('active');
+todo_tabs[0].classList.add('active');
 
-main_tabs.forEach(click_tab => {
-  click_tab.addEventListener('click', () => {
-    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
-    click_tab.classList.add('active');
+todo_tabs.forEach(find_tab => {
+  find_tab.addEventListener('click', () => {
+    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
+    find_tab.classList.add('active');
+    todo_tabs_active = find_tab.textContent;
+    document.getElementById("content_1").innerText = todo_tabs_active;
   });
 });
 
@@ -18,27 +20,24 @@ tabs.forEach(select_tab => {
   select_tab.addEventListener('click', () => {
     tabs.forEach(select_tab => select_tab.classList.remove('active'));
     select_tab.classList.add('active');
+    todo_tabs_active = todo_tabs[0].textContent;
+    document.getElementById("content_1").innerText = todo_tabs_active;
   });
 });
 
 
-const todo_tabs = document.querySelectorAll('.todo_tab');
+const main_tabs = document.querySelectorAll('.main_tab');
 
-todo_tabs[0].classList.add('active');
+main_tabs[0].classList.add('active');
 
-todo_tabs.forEach(find_tab => {
-  find_tab.addEventListener('click', () => {
-    todo_tabs.forEach(find_tab => find_tab.classList.remove('active'));
-    find_tab.classList.add('active');
+main_tabs.forEach(click_tab => {
+  click_tab.addEventListener('click', () => {
+    main_tabs.forEach(click_tab => click_tab.classList.remove('active'));
+    click_tab.classList.add('active');
+    todo_tabs_active = todo_tabs[0].textContent;
+    document.getElementById("content_1").innerText = todo_tabs_active;
   });
 });
-
-
-
-
-
-const todo_tabs_active = document.querySelector('.todo_tab.active').textContent;
-document.getElementById("content_1").innerText = todo_tabs_active;
 
 
 
