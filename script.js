@@ -90,7 +90,7 @@ function openSearch() {
   features.style.userSelect = 'none';
   features.style.webkitUserDrag = 'none';
   search.classList.add("active");
-  document.getElementById("search_todo").innerText = c1;
+  document.getElementById("search_todo").innerText = todo_tabs_active;
 }
 
 function closeSearch() {
@@ -108,7 +108,7 @@ function openFilter() {
   features.style.userSelect = 'none';
   features.style.webkitUserDrag = 'none';
   filter.classList.add("active");
-  document.getElementById("filter_todo").innerText = c1;
+  document.getElementById("filter_todo").innerText = todo_tabs_active;
 }
 
 function closeFilter() {
