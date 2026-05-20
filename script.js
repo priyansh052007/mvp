@@ -318,54 +318,55 @@ function updateTabs() {
 
 /*
 
-// Get all elements
+
 const main_tabs = document.querySelectorAll('.main_tab');
 const tabs = document.querySelectorAll('.tab');
 const todo_tabs = document.querySelectorAll('.todo_tab');
-const todo_content = document.querySelector('.todo_content'); // Content area
+let todo_tabs_active = todo_tabs[0].textContent;
 
-// Helper to remove 'active' from a NodeList and set one active
+
 function setActive(nodeList, index) {
   nodeList.forEach(el => el.classList.remove('active'));
   nodeList[index].classList.add('active');
 }
 
-// Helper to update content based on active todo tab
+
 function updateContent(index) {
-  todo_content.textContent = todo_tabs[index].textContent;
+  todo_tabs_active = todo_tabs[index].textContent;
 }
 
-// Initialize first active states
+
 setActive(main_tabs, 0);
 setActive(tabs, 0);
 setActive(todo_tabs, 0);
 updateContent(0);
 
-// When clicking main tabs
+
 main_tabs.forEach((tab, i) => {
   tab.addEventListener('click', () => {
-    setActive(main_tabs, i);     // Activate clicked main tab
-    setActive(todo_tabs, 0);     // Reset todo_tabs to first
-    updateContent(0);             // Update content
+    setActive(main_tabs, i);
+    setActive(todo_tabs, 0);
+    updateContent(0);
   });
 });
 
-// When clicking sub-tabs
+
 tabs.forEach((tab, i) => {
   tab.addEventListener('click', () => {
-    setActive(tabs, i);          // Activate clicked tab
-    setActive(todo_tabs, 0);     // Reset todo_tabs to first
-    updateContent(0);             // Update content
+    setActive(tabs, i);
+    setActive(todo_tabs, 0);
+    updateContent(0);
   });
 });
 
-// When clicking todo tabs
+
 todo_tabs.forEach((tab, i) => {
   tab.addEventListener('click', () => {
-    setActive(todo_tabs, i);     // Activate clicked todo tab
-    updateContent(i);             // Update content
+    setActive(todo_tabs, i);
+    updateContent(i);
   });
 });
+
 
 */
 
