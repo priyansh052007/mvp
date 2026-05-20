@@ -347,7 +347,7 @@ main_tabs.forEach((find_tab, find_index) => {
     setActive(main_tabs, find_index);
     setActive(tabs, 0);
     setActive(todo_tabs, 0);
-    updateContent(0);
+    updateTodoTabsActive(0);
   });
 });
 
@@ -356,7 +356,7 @@ tabs.forEach((find_tab, find_index) => {
   find_tab.addEventListener('click', () => {
     setActive(tabs, find_index);
     setActive(todo_tabs, 0);
-    updateContent(0);
+    updateTodoTabsActive(0);
   });
 });
 
@@ -364,7 +364,7 @@ tabs.forEach((find_tab, find_index) => {
 todo_tabs.forEach((find_tab, find_index) => {
   find_tab.addEventListener('click', () => {
     setActive(todo_tabs, find_index);
-    updateContent(find_index);
+    updateTodoTabsActive(find_index);
   });
 });
 
