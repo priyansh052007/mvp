@@ -37,7 +37,7 @@ todo_tabs.forEach(find_tab => {
 
 
 
-const todo_tabs_active = document.querySelectorAll('.todo_tab.active').textContent;
+const todo_tabs_active = document.querySelector('.todo_tab.active').textContent;
 document.getElementById("content_1").innerText = todo_tabs_active;
 
 
