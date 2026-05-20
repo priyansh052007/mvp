@@ -322,7 +322,7 @@ function updateTabs() {
 const main_tabs = document.querySelectorAll('.main_tab');
 const tabs = document.querySelectorAll('.tab');
 const todo_tabs = document.querySelectorAll('.todo_tab');
-let todo_tabs_active = todo_tabs[0].textContent;
+let updateTodoTabsActive
 
 
 function setActive(nodeList, index) {
@@ -331,7 +331,7 @@ function setActive(nodeList, index) {
 }
 
 
-function updateContent(index) {
+function updateTodoTabsActive(index) {
   todo_tabs_active = todo_tabs[index].textContent;
 }
 
@@ -339,31 +339,32 @@ function updateContent(index) {
 setActive(main_tabs, 0);
 setActive(tabs, 0);
 setActive(todo_tabs, 0);
-updateContent(0);
+updateTodoTabsActive(0);
 
 
-main_tabs.forEach((find_tab, i) => {
+main_tabs.forEach((find_tab, find_index) => {
   find_tab.addEventListener('click', () => {
-    setActive(main_tabs, i);
+    setActive(main_tabs, find_index);
+    setActive(tabs, 0);
     setActive(todo_tabs, 0);
     updateContent(0);
   });
 });
 
 
-tabs.forEach((find_tab, i) => {
+tabs.forEach((find_tab, find_index) => {
   find_tab.addEventListener('click', () => {
-    setActive(tabs, i);
+    setActive(tabs, find_index);
     setActive(todo_tabs, 0);
     updateContent(0);
   });
 });
 
 
-todo_tabs.forEach((find_tab, i) => {
+todo_tabs.forEach((find_tab, find_index) => {
   find_tab.addEventListener('click', () => {
-    setActive(todo_tabs, i);
-    updateContent(i);
+    setActive(todo_tabs, find_index);
+    updateContent(find_index);
   });
 });
 
