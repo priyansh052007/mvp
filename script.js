@@ -1,4 +1,4 @@
-const todo_tabs = document.querySelectorAll('.todo_tab');
+/*const todo_tabs = document.querySelectorAll('.todo_tab');
 
 todo_tabs[0].classList.add('active');
 let todo_tabs_active = todo_tabs[0].textContent;
@@ -40,7 +40,7 @@ main_tabs.forEach(click_tab => {
     todo_tabs_active = todo_tabs[0].textContent;
     document.getElementById("content_1").innerText = todo_tabs_active;
   });
-});
+});*/
 
 
 
@@ -316,7 +316,7 @@ function updateTabs() {
 
 
 
-/*
+
 
 
 const main_tabs = document.querySelectorAll('.main_tab');
@@ -369,7 +369,7 @@ todo_tabs.forEach((find_tab, find_index) => {
 });
 
 
-*/
+
 
 
 
