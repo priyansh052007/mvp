@@ -337,12 +337,13 @@ html, body {
 .main_tabs {
   height: 8dvh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: #eaebec;
   color: #42424f;
 }
 .main_tabs .main_tab {
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
