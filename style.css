@@ -24,7 +24,6 @@ html, body {
   display: flex;
   flex-direction: column;
   transform: translateY(-100%);
-  transition: transform 0.5s ease;
 }
 .profile.active {
   transform: translateY(0);
