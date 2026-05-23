@@ -126,21 +126,22 @@ html, body {
   gap: 1.5dvh;
 }
 .m_p_u_text:first-child {
-  font-size: 60px;
+  font-size: 45px;
   color: #424250;
 }
 .m_p_u_text:last-child {
-  font-size: 45px;
+  font-size: 30px;
   color: #9c9caf;
 }
 .m_p_u_image {
+  height: 30dvh;
   width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e7f0fd;
   color: #9ec0f8;
-  font-size: 80px;
+  font-size: 60px;
   border-radius: 50%;
 }
 .main_profile_user .main_profile_user_features {
