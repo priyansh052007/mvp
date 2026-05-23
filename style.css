@@ -108,8 +108,6 @@ html, body {
   width: 85vw;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  padding: 0dvh 2.5vw 0dvh 2.5vw;
 }
 .main_profile_user .main_profile_user_details {
   height: 24dvh;
@@ -118,6 +116,8 @@ html, body {
   align-items: center;
   background: #fafafb;
   color: #42424f;
+  border-radius: 20px 20px 0px 0px;
+  padding: 0dvh 2.5vw 0dvh 2.5vw;
 }
 .m_p_u_text {
   width: 50vw;
@@ -152,6 +152,8 @@ html, body {
   background: #fafafb;
   color: #424250;
   font-size: 30px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 0dvh 2.5vw 0dvh 2.5vw;
 }
 .m_p_u_year, .m_p_u_ai {
   width: 40vw;
