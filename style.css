@@ -107,8 +107,10 @@ html, body {
 .main_profile_content {
   position: fixed;
   z-index: 5;
+  left: 0vw;
   top: 18dvh;
   height: 82dvh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
