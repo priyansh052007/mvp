@@ -86,8 +86,13 @@ html, body {
   height: 5dvh;
   width: 33vw;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.main_profile_header .m_p_h_tab:first-child {
+  justify-content: flex-start;
+}
+.main_profile_header .m_p_h_tab:not(:first-child) {
+  justify-content: center;
 }
 .main_profile_header_icon {
   font-size: 70px;
