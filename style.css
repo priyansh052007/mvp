@@ -114,7 +114,7 @@ html, body {
 .main_profile_user .main_profile_user_details {
   height: 24dvh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #fafafb;
   color: #42424f;
@@ -125,17 +125,17 @@ html, body {
   flex-direction: column;
   gap: 0.5dvh;
 }
-.m_p_u_text:first-child {
+.main_profile_user spam:first-child {
   font-size: 45px;
   color: #424250;
 }
-.m_p_u_text:last-child {
+.main_profile_user spam:last-child {
   font-size: 30px;
   color: #9c9caf;
 }
 .m_p_u_image {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
