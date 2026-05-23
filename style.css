@@ -97,6 +97,7 @@ html, body {
   align-items: center;
   background: #fafafb;
   color: #42424f;
+  border-radius: 10px;
   padding: 0dvh 4vw 0dvh 2vw;
   font-size: 25px;
 }
@@ -108,6 +109,7 @@ html, body {
   align-items: center;
   background: #ffffe;
   color: #42424f;
+  border-radius: 12px 12px 0 0;
   padding: 0dvh 4vw 0dvh 2vw;
   font-size: 25px;
 }
