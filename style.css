@@ -114,7 +114,8 @@ html, body {
 .main_profile_user .main_profile_user_details {
   height: 24dvh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fafafb;
   color: #42424f;
 }
@@ -145,7 +146,8 @@ html, body {
 .main_profile_user .main_profile_user_features {
   height: 4dvh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fafafb;
   color: #424250;
   font-size: 30px;
