@@ -24,6 +24,7 @@ html, body {
   display: flex;
   flex-direction: column;
   transform: translateY(-100%);
+  transition: transform 0.5s ease;
 }
 .profile.active {
   transform: translateY(0);
@@ -97,7 +98,7 @@ html, body {
   align-items: center;
   background: #fafafb;
   color: #42424f;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0dvh 4vw 0dvh 2vw;
   font-size: 25px;
 }
@@ -109,7 +110,7 @@ html, body {
   align-items: center;
   background: #ffffe;
   color: #42424f;
-  border-radius: 12px 12px 0 0;
+  border-radius: 30px 30px 0 0;
   padding: 0dvh 4vw 0dvh 2vw;
   font-size: 25px;
 }
