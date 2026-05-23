@@ -134,8 +134,8 @@ html, body {
   color: #9c9caf;
 }
 .m_p_u_image {
-  height: 30dvh;
-  width: 30vw;
+  height: 120px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
