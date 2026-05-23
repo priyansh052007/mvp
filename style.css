@@ -72,7 +72,7 @@ html, body {
 }
 
 .main_profile_header {
-  height: 20dvh;
+  height: 22dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -104,20 +104,63 @@ html, body {
   z-index: 5;
   left: 7.5vw;
   top: 8dvh;
-  height: 24dvh;
+  height: 28dvh;
   width: 85vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  padding: 0dvh 2.5vw 0dvh 2.5vw;
+  font-size: 25px;
+}
+.main_profile_user .main_profile_user_details {
+  height: 24dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fafafb;
   color: #42424f;
-  border-radius: 20px;
-  padding: 0dvh 2vw 0dvh 2vw;
-  font-size: 25px;
+}
+.m_p_u_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5dvh;
+}
+.m_p_u_text:first-child {
+  font-size: 60px;
+  color: #424250;
+}
+.m_p_u_text:last-child {
+  font-size: 45px;
+  color: #9c9caf;
+}
+.m_p_u_image {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7f0fd;
+  color: #9ec0f8;
+  font-size: 80px;
+  border-radius: 50%;
+}
+.main_profile_user .main_profile_user_features {
+  height: 4dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafb;
+  color: #424250;
+  font-size: 30px;
+}
+.m_p_u_year, .m_p_u_ai {
+  width: 40vh;
 }
 
 .main_profile_content {
-  height: 80dvh;
+  height: 78dvh;
   display: flex;
   justify-content: center;
   align-items: center;
