@@ -105,6 +105,7 @@ html, body {
 
 .main_profile_content {
   height: 80dvh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
