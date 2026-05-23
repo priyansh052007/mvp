@@ -72,7 +72,7 @@ html, body {
 }
 
 .main_profile_header {
-  height: 18dvh;
+  height: 20dvh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -90,7 +90,7 @@ html, body {
   position: fixed;
   z-index: 5;
   left: 7.5vw;
-  top: 6dvh;
+  top: 8dvh;
   height: 24dvh;
   width: 85vw;
   display: flex;
@@ -104,7 +104,7 @@ html, body {
 }
 
 .main_profile_content {
-  height: 82dvh;
+  height: 80dvh;
   display: flex;
   justify-content: center;
   align-items: center;
