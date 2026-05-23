@@ -88,10 +88,10 @@ html, body {
 .main_profile_user {
   position: fixed;
   z-index: 5;
-  left: 7.5vh;
+  left: 7.5vw;
   top: 6dvh;
   height: 24dvh;
-  width: 85vh;
+  width: 85vw;
   display: flex;
   justify-content: center;
   align-items: center;
