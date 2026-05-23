@@ -123,7 +123,7 @@ html, body {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  gap: 1.5dvh;
+  gap: 0.5dvh;
 }
 .m_p_u_text:first-child {
   font-size: 45px;
