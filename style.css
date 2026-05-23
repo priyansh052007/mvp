@@ -74,7 +74,7 @@ html, body {
 .main_profile_header {
   height: 20dvh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   background: #eaebec;
   color: #42424f;
@@ -83,11 +83,7 @@ html, body {
   font-weight: bold;
 }
 .main_profile_header .main_profile_header_icon {
-  margin-right: auto;
   font-size: 70px;
-}
-.main_profile_header .main_profile_header_text {
-  transform: translateX(-35px);
 }
 
 .main_profile_user {
