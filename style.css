@@ -75,7 +75,7 @@ html, body {
   height: 20dvh;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: flex-start;
+  align-items: center;
   background: #eaebec;
   color: #42424f;
   padding: 0.75dvh 4vw 0dvh 2vw;
