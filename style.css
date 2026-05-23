@@ -78,16 +78,16 @@ html, body {
   align-items: flex-start;
   background: #eaebec;
   color: #42424f;
-  padding: 0.75dvh 0vw 0dvh 0vw;
+  padding: 0dvh 0vw 0dvh 0vw;
   font-size: 50px;
   font-weight: bold;
 }
 .main_profile_header .m_p_h_tab {
-  height: 20dvh;
+  height: 5dvh;
   width: 33vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .main_profile_header_icon {
   font-size: 70px;
