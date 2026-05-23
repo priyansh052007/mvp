@@ -100,18 +100,16 @@ html, body {
 }
 
 .main_profile_user {
-  /*position: fixed;
-  z-index: 5;*/
+  position: fixed;
+  z-index: 5;
   left: 7.5vw;
   top: 8dvh;
   height: 28dvh;
   width: 85vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   border-radius: 20px;
   padding: 0dvh 2.5vw 0dvh 2.5vw;
-  font-size: 25px;
 }
 .main_profile_user .main_profile_user_details {
   height: 24dvh;
