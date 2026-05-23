@@ -37,7 +37,7 @@ html, body {
   align-items: center;
   background: #eaebec;
   color: #42424f;
-  padding: 0dvh 2vw 0dvh 2.5vw;
+  padding: 1dvh 2vw 0dvh 2.5vw;
   font-size: 50px;
   font-weight: bold;
 }
