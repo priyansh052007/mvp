@@ -100,8 +100,8 @@ html, body {
 }
 
 .main_profile_user {
-  position: fixed;
-  z-index: 5;
+  /*position: fixed;
+  z-index: 5;*/
   left: 7.5vw;
   top: 8dvh;
   height: 28dvh;
