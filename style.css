@@ -71,10 +71,10 @@ html, body {
 }
 
 .main_profile_header {
-  height: 17.5dvh;
+  height: 18dvh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background: #eaebec;
   color: #42424f;
   padding: 0dvh 4vw 0dvh 2vw;
@@ -89,8 +89,8 @@ html, body {
   position: fixed;
   z-index: 5;
   left: 7.5vh;
-  top: 7.5dvh;
-  height: 20dvh;
+  top: 6dvh;
+  height: 24dvh;
   width: 85vh;
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@ html, body {
 }
 
 .main_profile_content {
-  height: 82.5dvh;
+  height: 82dvh;
   display: flex;
   justify-content: center;
   align-items: center;
