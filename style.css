@@ -117,12 +117,11 @@ html, body {
   height: 24dvh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: #fafafb;
   color: #42424f;
 }
 .m_p_u_text {
+  width: 50vw;
   display: flex;
   flex-direction: column;
   gap: 1.5dvh;
@@ -136,8 +135,7 @@ html, body {
   color: #9c9caf;
 }
 .m_p_u_image {
-  width: 120px;
-  height: 120px;
+  width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,14 +147,16 @@ html, body {
 .main_profile_user .main_profile_user_features {
   height: 4dvh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   background: #fafafb;
   color: #424250;
   font-size: 30px;
 }
 .m_p_u_year, .m_p_u_ai {
   width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_profile_content {
