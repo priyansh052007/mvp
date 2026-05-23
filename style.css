@@ -71,7 +71,7 @@ html, body {
 }
 
 .main_profile_header {
-  height: 5dvh;
+  height: 17.5dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,12 @@ html, body {
 }
 
 .main_profile_user {
+  position: fixed;
+  z-index: 5;
+  left: 7.5vh;
+  top: 7.5dvh;
   height: 20dvh;
+  width: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +102,7 @@ html, body {
 }
 
 .main_profile_content {
-  height: 75dvh;
+  height: 82.5dvh;
   display: flex;
   justify-content: center;
   align-items: center;
