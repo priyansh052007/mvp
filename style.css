@@ -79,7 +79,7 @@ html, body {
   align-items: flex-start;
   background: #eaebec;
   color: #42424f;
-  padding: 2dvh 4vw 0dvh 2vw;
+  padding: 1dvh 4vw 0dvh 2vw;
   font-size: 50px;
   font-weight: bold;
 }
@@ -89,7 +89,7 @@ html, body {
 
 .main_profile_user {
   position: fixed;
-  z-index: 5;
+  z-index: 6;
   left: 7.5vw;
   top: 6dvh;
   height: 24dvh;
@@ -105,6 +105,9 @@ html, body {
 }
 
 .main_profile_content {
+  position: fixed;
+  z-index: 5;
+  top: 18dvh;
   height: 82dvh;
   display: flex;
   justify-content: center;
