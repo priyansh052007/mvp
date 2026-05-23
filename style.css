@@ -78,7 +78,7 @@ html, body {
   align-items: flex-start;
   background: #eaebec;
   color: #42424f;
-  padding: 0.75dvh 0vw 0dvh 0vw;
+  padding: 0.75dvh 0vw 0dvh 0.5vw;
   font-size: 50px;
   font-weight: bold;
 }
@@ -99,7 +99,7 @@ html, body {
   background: #fafafb;
   color: #42424f;
   border-radius: 20px;
-  padding: 0dvh 4vw 0dvh 2vw;
+  padding: 0dvh 2vw 0dvh 2vw;
   font-size: 25px;
 }
 
@@ -110,7 +110,7 @@ html, body {
   align-items: center;
   background: #ffffe;
   color: #42424f;
-  padding: 0dvh 4vw 0dvh 2vw;
+  padding: 0dvh 2vw 0dvh 2vw;
   font-size: 25px;
 }
 
