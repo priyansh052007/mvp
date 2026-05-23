@@ -78,7 +78,7 @@ html, body {
   align-items: flex-start;
   background: #eaebec;
   color: #42424f;
-  padding: 1dvh 4vw 0dvh 2vw;
+  padding: 0.75dvh 4vw 0dvh 2vw;
   font-size: 50px;
   font-weight: bold;
 }
@@ -89,10 +89,11 @@ html, body {
 .main_profile_user {
   position: fixed;
   z-index: 5;
-  left: 7.5vw;
+  /* left: 7.5vw; */
   top: 6dvh;
   height: 24dvh;
-  width: 85vw;
+  /* width: 85vw; */
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
