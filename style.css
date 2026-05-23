@@ -74,7 +74,7 @@ html, body {
 .main_profile_header {
   height: 20dvh;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   align-items: center;
   background: #eaebec;
   color: #42424f;
