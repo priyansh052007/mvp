@@ -72,7 +72,7 @@ html, body {
 }
 
 .main_profile_header {
-  height: 22dvh;
+  height: 21dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -103,7 +103,7 @@ html, body {
   position: fixed;
   z-index: 5;
   left: 7.5vw;
-  top: 8dvh;
+  top: 7dvh;
   height: 28dvh;
   width: 85vw;
   display: flex;
@@ -114,8 +114,7 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #fafafb;
-  color: #42424f;
+  background: #ffffe;
   border-radius: 20px 20px 0px 0px;
   padding: 0dvh 2.5vw 0dvh 2.5vw;
 }
@@ -134,8 +133,8 @@ html, body {
   color: #9c9caf;
 }
 .m_p_u_image {
-  height: 300px;
-  width: 300px;
+  height: 23dvh;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +162,7 @@ html, body {
 }
 
 .main_profile_content {
-  height: 78dvh;
+  height: 79dvh;
   display: flex;
   justify-content: center;
   align-items: center;
