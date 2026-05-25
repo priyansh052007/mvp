@@ -122,14 +122,13 @@ html, body {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  gap: 0.5dvh;
 }
 .m_p_u_text span:first-child {
-  font-size: 50px;
+  font-size: 45px;
   color: #424250;
 }
 .m_p_u_text span:last-child {
-  font-size: 40px;
+  font-size: 32px;
   color: #9c9caf;
 }
 .m_p_u_image {
