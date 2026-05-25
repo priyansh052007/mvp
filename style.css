@@ -72,7 +72,7 @@ html, body {
 }
 
 .main_profile_header {
-  height: 21dvh;
+  height: 20dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -110,7 +110,7 @@ html, body {
   flex-direction: column;
 }
 .main_profile_user .main_profile_user_details {
-  height: 24dvh;
+  height: 22dvh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -133,7 +133,7 @@ html, body {
   color: #9c9caf;
 }
 .m_p_u_image {
-  height: 20dvh;
+  height: 18dvh;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
