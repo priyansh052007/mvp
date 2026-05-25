@@ -112,14 +112,13 @@ html, body {
 .main_profile_user .main_profile_user_details {
   height: 22dvh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background: #fff;
   border-radius: 24px 24px 0px 0px;
-  padding: 0dvh 2.5vw 0dvh 2.5vw;
+  padding: 0dvh 3.5vw 0dvh 3.5vw;
 }
 .m_p_u_text {
-  width: 50vw;
   display: flex;
   flex-direction: column;
 }
@@ -151,7 +150,7 @@ html, body {
   color: #424250;
   font-size: 30px;
   border-radius: 0px 0px 24px 24px;
-  padding: 0dvh 3.5vw 0dvh 2.5vw;
+  padding: 0dvh 2.5vw 0dvh 2.5vw;
 }
 .m_p_u_year, .m_p_u_ai {
   width: 40vw;
