@@ -1,29 +1,15 @@
-const todo_tabs = document.querySelectorAll('.todo_tab');
-
-todo_tabs[0].classList.add('active');
-let todo_tabs_active = todo_tabs[0].textContent;
-document.getElementById("content_1").innerText = todo_tabs_active;
-
-todo_tabs.forEach(find_tab => {
-  find_tab.addEventListener('click', () => {
-    todo_tabs.forEach(find__tab => find__tab.classList.remove('active'));
-    find_tab.classList.add('active');
-    todo_tabs_active = find_tab.textContent;
-    document.getElementById("content_1").innerText = todo_tabs_active;
-  });
-});
-
-
 const tabs = document.querySelectorAll('.tab');
 
 tabs[0].classList.add('active');
+let tabs_active = tabs[0].textContent;
+document.getElementById("content_1").innerText = tabs_active;
 
 tabs.forEach(select_tab => {
   select_tab.addEventListener('click', () => {
     tabs.forEach(select__tab => select__tab.classList.remove('active'));
     select_tab.classList.add('active');
-    todo_tabs_active = todo_tabs[0].textContent;
-    document.getElementById("content_1").innerText = todo_tabs_active;
+    tabs_active = select_tab.textContent;
+    document.getElementById("content_1").innerText = tabs_active;
   });
 });
 
@@ -36,8 +22,8 @@ main_tabs.forEach(click_tab => {
   click_tab.addEventListener('click', () => {
     main_tabs.forEach(click__tab => click__tab.classList.remove('active'));
     click_tab.classList.add('active');
-    todo_tabs_active = todo_tabs[0].textContent;
-    document.getElementById("content_1").innerText = todo_tabs_active;
+    tabs_active = tabs[0].textContent;
+    document.getElementById("content_1").innerText = tabs_active;
   });
 });
 
@@ -48,8 +34,6 @@ main_tabs.forEach(click_tab => {
 const features = document.querySelector(".features");
 const profile = document.getElementById("profile");
 const main_profile = document.getElementById("main_profile");
-const search = document.getElementById("search");
-const filter = document.getElementById("filter");
 
 function openProfile() {
   features.style.pointerEvents = "none";
@@ -85,47 +69,11 @@ function closeMainProfile() {
   features.style.pointerEvents = "auto";
 }
 
-function openSearch() {
-  features.style.pointerEvents = "none";
-  features.style.opacity = "0.4";
-  features.style.userSelect = 'none';
-  features.style.webkitUserDrag = 'none';
-  search.classList.add("active");
-  document.getElementById("search_todo").innerText = todo_tabs_active;
-}
-
-function closeSearch() {
-  search.classList.remove("active");
-  features.style.opacity = "1";
-  features.style.userSelect = 'auto';
-  features.style.webkitUserDrag = 'auto';
-  features.style.pointerEvents = "auto";
-  document.getElementById("search_todo").innerText = "search";
-}
-
-function openFilter() {
-  features.style.pointerEvents = "none";
-  features.style.opacity = "0.4";
-  features.style.userSelect = 'none';
-  features.style.webkitUserDrag = 'none';
-  filter.classList.add("active");
-  document.getElementById("filter_todo").innerText = todo_tabs_active;
-}
-
-function closeFilter() {
-  filter.classList.remove("active");
-  features.style.opacity = "1";
-  features.style.userSelect = 'auto';
-  features.style.webkitUserDrag = 'auto';
-  features.style.pointerEvents = "auto";
-  document.getElementById("filter_todo").innerText = "filter";
-}
 
 
 
 
-
-let currentTab = "class";
+let currentTab = "school";
 let currentOption = "a";
 
 function selectTab(tab) {
@@ -133,26 +81,14 @@ function selectTab(tab) {
   __tabs[0].classList.add('active');
   __tabs[1].classList.remove('active');
   __tabs[2].classList.remove('active');
-  const todo__tabs = document.querySelectorAll('.todo_tab');
-  todo__tabs[0].classList.add('active');
-  todo__tabs[1].classList.remove('active');
-  todo__tabs[2].classList.remove('active');
-  todo__tabs[3].classList.remove('active');
+  __tabs[3].classList.remove('active');
+  __tabs[4].classList.remove('active');
   currentTab = tab;
   currentOption = "a";
   updateTabs();
 }
 
 function selectOption(option) {
-  const ___tabs = document.querySelectorAll('.tab');
-  ___tabs[0].classList.add('active');
-  ___tabs[1].classList.remove('active');
-  ___tabs[2].classList.remove('active');
-  const todo___tabs = document.querySelectorAll('.todo_tab');
-  todo___tabs[0].classList.add('active');
-  todo___tabs[1].classList.remove('active');
-  todo___tabs[2].classList.remove('active');
-  todo___tabs[3].classList.remove('active');
   currentOption = option;
   updateTabs();
 }
@@ -161,7 +97,7 @@ function setTab(id, value) {
   const el = document.getElementById(id);
   if (value && value.trim() !== "") {
     el.innerText = value;
-    el.style.display = "flex";
+    el.style.display = "inline-block";
   } else {
     el.innerText = "";
     el.style.display = "none";
@@ -169,100 +105,98 @@ function setTab(id, value) {
 }
 
 function updateTabs() {
-  let h1, t1, t2, t3, tt1, tt2, tt3, tt4;
+  let h1, t1, t2, t3, t4, t5;
 
-  if (currentTab === "class" && currentOption === "a") {
+  if (currentTab === "school" && currentOption === "a") {
+    h1 = "School";
+    t1 = "School";
+    t2 = "Event";
+    t3 = "Calendar";
+    t4 = "Attendance";
+    t5 = "Notification";
+  }
+  else if (currentTab === "school" && currentOption === "b") {
+    h1 = "School";
+    t1 = "School";
+    t2 = "Event";
+    t3 = "Calendar";
+    t4 = "Attendance";
+    t5 = "Notification";
+  }
+  else if (currentTab === "school" && currentOption === "c") {
+    h1 = "School";
+    t1 = "School";
+    t2 = "Event";
+    t3 = "Calendar";
+    t4 = "Attendance";
+    t5 = "Notification";
+  }
+  else if (currentTab === "school" && currentOption === "d") {
+    h1 = "School";
+    t1 = "School";
+    t2 = "Event";
+    t3 = "Calendar";
+    t4 = "Attendance";
+    t5 = "Notification";
+  }
+  else if (currentTab === "school" && currentOption === "e") {
+    h1 = "School";
+    t1 = "School";
+    t2 = "Event";
+    t3 = "Calendar";
+    t4 = "Attendance";
+    t5 = "Notification";
+  }
+
+  else if (currentTab === "class" && currentOption === "a") {
     h1 = "Class";
     t1 = "Class";
-    t2 = "Class Attendance";
+    t2 = "";
     t3 = "";
-    tt1 = "Class";
-    tt2 = "Add Class";
-    tt3 = "Update Class";
-    tt4 = "Remove Class";
-  } 
-  else if (currentTab === "class" && currentOption === "b") {
-    h1 = "Class";
-    t1 = "Class";
-    t2 = "Class Attendance";
-    t3 = "";
-    tt1 = "Class Attendance";
-    tt2 = "Add Class Attendance";
-    tt3 = "Update Class Attendance";
-    tt4 = "";
+    t4 = "";
+    t5 = "";
   }
 
   else if (currentTab === "subject" && currentOption === "a") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Subject Activity";
-    t3 = "";
-    tt1 = "Subject";
-    tt2 = "Add Subject";
-    tt3 = "Update Subject";
-    tt4 = "Remove Subject";
-  } 
+    t2 = "Missed Topic";
+    t3 = "Subject Activity";
+    t4 = "";
+    t5 = "";
+  }
   else if (currentTab === "subject" && currentOption === "b") {
     h1 = "Subject";
     t1 = "Subject";
-    t2 = "Subject Activity";
-    t3 = "";
-    tt1 = "Subject Activity";
-    tt2 = "Add Subject Activity";
-    tt3 = "Update Subject Activity";
-    tt4 = "Remove Student Activity";
+    t2 = "Missed Topic";
+    t3 = "Subject Activity";
+    t4 = "";
+    t5 = "";
   }
-
-  else if (currentTab === "student" && currentOption === "a") {
-    h1 = "Student";
-    t1 = "Student";
-    t2 = "Student Attendance";
-    t3 = "";
-    tt1 = "Student";
-    tt2 = "Add Student";
-    tt3 = "Update Student";
-    tt4 = "Remove Student";
-  } 
-  else if (currentTab === "student" && currentOption === "b") {
-    h1 = "Student";
-    t1 = "Student";
-    t2 = "Student Attendance";
-    t3 = "";
-    tt1 = "Student Attendance";
-    tt2 = "";
-    tt3 = "";
-    tt4 = "";
+  else if (currentTab === "subject" && currentOption === "c") {
+    h1 = "Subject";
+    t1 = "Subject";
+    t2 = "Missed Topic";
+    t3 = "Subject Activity";
+    t4 = "";
+    t5 = "";
   }
 
   else if (currentTab === "teacher" && currentOption === "a") {
     h1 = "Teacher";
     t1 = "Teacher";
-    t2 = "Teacher Subject";
-    t3 = "Teacher Attendance";
-    tt1 = "Teacher";
-    tt2 = "Add Teacher";
-    tt3 = "Update Teacher";
-    tt4 = "Remove Teacher";
+    t2 = "Missed Topic";
+    t3 = "";
+    t4 = "";
+    t5 = "";
   } 
   else if (currentTab === "teacher" && currentOption === "b") {
     h1 = "Teacher";
     t1 = "Teacher";
-    t2 = "Teacher Subject";
-    t3 = "Teacher Attendance";
-    tt1 = "Teacher Subject";
-    tt2 = "Add Teacher Subject";
-    tt3 = "Update Teacher Subject";
-    tt4 = "Remove Teacher Subject";
-  }
-  else if (currentTab === "teacher" && currentOption === "c") {
-    h1 = "Teacher";
-    t1 = "Teacher";
-    t2 = "Teacher Subject";
-    t3 = "Teacher Attendance";
-    tt1 = "Teacher Attendance";
-    tt2 = "";
-    tt3 = "";
-    tt4 = "";
+    t2 = "Missed Topic";
+    t3 = "";
+    t4 = "";
+    t5 = "";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
@@ -270,30 +204,24 @@ function updateTabs() {
     t1 = "Timetable";
     t2 = "Date Specific Timetable";
     t3 = "Exam Timetable";
-    tt1 = "Timetable";
-    tt2 = "Add Timeframe Block";
-    tt3 = "Update Timetable";
-    tt4 = "Remove Timeframe Slot";
+    t4 = "";
+    t5 = "";
   } 
   else if (currentTab === "timetable" && currentOption === "b") {
     h1 = "Timetable";
     t1 = "Timetable";
     t2 = "Date Specific Timetable";
     t3 = "Exam Timetable";
-    tt1 = "Date Specific Timetable";
-    tt2 = "Add Timeframe Block";
-    tt3 = "Update Timetable";
-    tt4 = "Remove Timeframe Slot";
+    t4 = "";
+    t5 = "";
   }
   else if (currentTab === "timetable" && currentOption === "c") {
     h1 = "Timetable";
     t1 = "Timetable";
     t2 = "Date Specific Timetable";
     t3 = "Exam Timetable";
-    tt1 = "Exam Timetable";
-    tt2 = "Add Exam Timeframe";
-    tt3 = "Update Exam Timetable";
-    tt4 = "Remove Exam Timeframe";
+    t4 = "";
+    t5 = "";
   }
 
   document.getElementById("header_1").innerText = h1;
@@ -301,15 +229,25 @@ function updateTabs() {
   document.getElementById("tab_1").innerText = t1;
   document.getElementById("tab_2").innerText = t2;
   document.getElementById("tab_3").innerText = t3;
+  document.getElementById("tab_4").innerText = t4;
+  document.getElementById("tab_5").innerText = t5;
   */
   setTab("tab_1", t1);
   setTab("tab_2", t2);
   setTab("tab_3", t3);
-  document.getElementById("todo_tab_1").innerText = tt1;
-  document.getElementById("todo_tab_2").innerText = tt2;
-  document.getElementById("todo_tab_3").innerText = tt3;
-  document.getElementById("todo_tab_4").innerText = tt4;
+  setTab("tab_4", t4);
+  setTab("tab_5", t5);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
