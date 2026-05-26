@@ -17,7 +17,7 @@ html, body {
 
 .profile {
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   inset: 0;
   height: 45dvh;
   width: 100vw;
@@ -58,7 +58,7 @@ html, body {
 
 .main_profile {
   position: fixed;
-  z-index: 4;
+  z-index: 2;
   inset: 0;
   height: 100dvh;
   width: 100vw;
