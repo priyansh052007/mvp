@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+  <link href="teacher.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="app">
+    
+    <div class="profile" id="profile">
+      <span>Teacher</span>
+      <span class="material-symbols-rounded profile_icon" onclick="closeProfile()">close</span>
+    </div>
+
+    <div class="header">
+      <span id="header_1">School</span>
+      <span class="material-symbols-rounded header_icon" onclick="openProfile()">arrow_downward_alt</span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab" id="tab_1" onclick="selectOption('a')">School</span>
+      <span class="tab" id="tab_2" onclick="selectOption('b')">Event</span>
+      <span class="tab" id="tab_3" onclick="selectOption('c')">Calendar</span>
+      <span class="tab" id="tab_4" onclick="selectOption('d')">Attendance</span>
+      <span class="tab" id="tab_5" onclick="selectOption('e')">Notification</span>
+    </div>
+
+    <div class="content">
+      <span id="content_1">School</span>
+    </div>
+
+    <div class="main_tabs">
+      <div class="main_tab" onclick="selectTab('school')"><span class="material-symbols-rounded main_tabs_icon">school</span>School</div>
+      <div class="main_tab" onclick="selectTab('class')"><span class="material-symbols-rounded main_tabs_icon">cast_for_education</span>Class</div>
+      <div class="main_tab" onclick="selectTab('subject')"><span class="material-symbols-rounded main_tabs_icon">book</span>Subject</div>
+      <div class="main_tab" onclick="selectTab('student')"><span class="material-symbols-rounded main_tabs_icon">id_card</span>Student</div>
+      <div class="main_tab" onclick="selectTab('timetable')"><span class="material-symbols-rounded main_tabs_icon">calendar_clock</span>Timetable</div>
+    </div>
+
+  </div>
+
+  <script src="teacher.js"></script>
+
+</body>
+
+</html>
