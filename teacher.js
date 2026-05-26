@@ -114,7 +114,6 @@ function updateTabs() {
     t3 = "Calendar";
     t4 = "Attendance";
     t5 = "Notification";
-    c1 = "School";
   }
   else if (currentTab === "school" && currentOption === "b") {
     h1 = "School";
@@ -123,7 +122,6 @@ function updateTabs() {
     t3 = "Calendar";
     t4 = "Attendance";
     t5 = "Notification";
-    c1 = "Event";
   }
   else if (currentTab === "school" && currentOption === "c") {
     h1 = "School";
@@ -132,7 +130,6 @@ function updateTabs() {
     t3 = "Calendar";
     t4 = "Attendance";
     t5 = "Notification";
-    c1 = "Calendar";
   }
   else if (currentTab === "school" && currentOption === "d") {
     h1 = "School";
@@ -141,7 +138,6 @@ function updateTabs() {
     t3 = "Calendar";
     t4 = "Attendance";
     t5 = "Notification";
-    c1 = "Attendance";
   }
   else if (currentTab === "school" && currentOption === "e") {
     h1 = "School";
@@ -150,7 +146,6 @@ function updateTabs() {
     t3 = "Calendar";
     t4 = "Attendance";
     t5 = "Notification";
-    c1 = "Notification";
   }
 
   else if (currentTab === "class" && currentOption === "a") {
@@ -160,7 +155,6 @@ function updateTabs() {
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Class";
   }
   else if (currentTab === "class" && currentOption === "b") {
     h1 = "Class";
@@ -169,7 +163,6 @@ function updateTabs() {
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Class Attendance";
   }
 
   else if (currentTab === "subject" && currentOption === "a") {
@@ -179,7 +172,6 @@ function updateTabs() {
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
-    c1 = "Subject";
   }
   else if (currentTab === "subject" && currentOption === "b") {
     h1 = "Subject";
@@ -188,7 +180,6 @@ function updateTabs() {
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
-    c1 = "Missed Topic Student";
   }
   else if (currentTab === "subject" && currentOption === "c") {
     h1 = "Subject";
@@ -197,7 +188,6 @@ function updateTabs() {
     t3 = "Subject Activity";
     t4 = "";
     t5 = "";
-    c1 = "Subject Activity";
   }
 
   else if (currentTab === "student" && currentOption === "a") {
@@ -207,7 +197,6 @@ function updateTabs() {
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Student";
   } 
   else if (currentTab === "student" && currentOption === "b") {
     h1 = "Student";
@@ -216,7 +205,6 @@ function updateTabs() {
     t3 = "";
     t4 = "";
     t5 = "";
-    c1 = "Student Missed Topic";
   }
 
   else if (currentTab === "timetable" && currentOption === "a") {
@@ -226,7 +214,6 @@ function updateTabs() {
     t3 = "Exam Timetable";
     t4 = "";
     t5 = "";
-    c1 = "Timetable";
   } 
   else if (currentTab === "timetable" && currentOption === "b") {
     h1 = "Timetable";
@@ -235,7 +222,6 @@ function updateTabs() {
     t3 = "Exam Timetable";
     t4 = "";
     t5 = "";
-    c1 = "Date Specific Timetable";
   }
   else if (currentTab === "timetable" && currentOption === "c") {
     h1 = "Timetable";
@@ -244,7 +230,6 @@ function updateTabs() {
     t3 = "Exam Timetable";
     t4 = "";
     t5 = "";
-    c1 = "Exam Timetable";
   }
 
   document.getElementById("header_1").innerText = h1;
